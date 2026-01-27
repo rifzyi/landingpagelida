@@ -34,27 +34,34 @@
       font-family: 'Rubik', sans-serif;
     }
 
-    /* --- UPDATE LOGO STYLE (MODERN) --- */
+    /* --- UPDATE LOGO STYLE (STACKED / BERTUMPUK) --- */
     .sitename {
       font-family: 'Poppins', sans-serif !important;
-      font-size: 1.6rem;
       display: flex;
-      align-items: baseline;
-      gap: 3px;
+      flex-direction: column; /* Menyusun ke bawah */
+      justify-content: center;
+      align-items: flex-start; /* Rata kiri */
+      line-height: 1; /* Merapatkan jarak baris */
     }
+
     .logo-prefix {
       font-weight: 500;
-      font-size: 1rem;
-      color: #64748b; /* Abu-abu Soft */
-      letter-spacing: -0.5px;
+      font-size: 0.85rem; /* Ukuran kecil untuk 'lynk.id' */
+      color: #64748b;     /* Warna abu-abu soft */
+      letter-spacing: 0.5px;
+      margin-bottom: 2px; /* Jarak dikit ke teks bawah */
+      display: block;
     }
+
     .logo-main {
-      font-weight: 800;
+      font-weight: 800;   /* Font tebal untuk Brand */
+      font-size: 1.8rem;  /* Ukuran besar */
       letter-spacing: -0.5px;
       text-transform: uppercase;
       background: linear-gradient(135deg, #0d6efd, #0dcaf0); 
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      display: block;
     }
 
     /* --- HERO SECTION (Lynk.id Style) --- */
@@ -145,27 +152,26 @@
     .card-info h5 { font-size: 0.9rem; font-weight: 700; margin: 0; color: #334155; }
     .card-info p { font-size: 0.75rem; margin: 0; color: #64748b; }
 
-    /* --- UPDATE COLOR HARMONY (FLOATING CARDS) --- */
+    /* --- COLOR HARMONY (FLOATING CARDS) --- */
     .card-1 { top: 25%; left: -20px; animation: float-card 5s ease-in-out infinite 0s; }
     .icon-1 { 
         background: white; 
         color: #0d6efd; 
         border: 1px solid #e2e8f0; 
-    } /* Updated: White & Blue */
+    } 
 
     .card-2 { bottom: 15%; right: -10px; animation: float-card 5s ease-in-out infinite 1.5s; }
     .icon-2 { 
         background: linear-gradient(135deg, #0d6efd, #0dcaf0); 
         color: white; 
         box-shadow: 0 4px 12px rgba(13, 110, 253, 0.2);
-    } /* Updated: Blue Gradient */
+    } 
 
     .card-3 { top: 10%; right: 30px; animation: float-card 6s ease-in-out infinite 0.5s; padding: 8px 12px; }
     .icon-3 { 
         background: #e0f2fe; 
         color: #0ea5e9; 
-    } /* Updated: Soft Light Blue */
-
+    } 
 
     /* Hero Stats */
     .hero-stats {
@@ -215,7 +221,6 @@
       overflow: hidden; position: relative;
     }
     
-    /* Updated: Bundling Price color to White */
     .bundling-price { 
         font-size: 3rem; 
         font-weight: 800; 
@@ -242,16 +247,14 @@
       box-shadow: 0 15px 35px rgba(0,0,0,0.3); transition: all 0.5s ease;
     }
 
-    /* --- UPDATE COLOR HARMONY (BUNDLING CARDS) --- */
+    /* --- COLOR HARMONY (BUNDLING CARDS) --- */
     .card-anim-back {
-      /* Updated: Dark Blue */
       background: linear-gradient(135deg, #0a58ca, #06357a); 
       border: 1px solid rgba(255,255,255,0.1);
       transform: rotate(-10deg) translate(-20px, 10px);
       z-index: 1; animation: float-back 4s infinite ease-in-out alternate;
     }
     .card-anim-mid {
-      /* Updated: Medium Blue */
       background: linear-gradient(135deg, #0d6efd, #3b82f6);
       opacity: 0.8;
       border: 1px solid rgba(255,255,255,0.2);
@@ -259,18 +262,16 @@
       z-index: 2; animation: float-mid 3.5s infinite ease-in-out alternate;
     }
     .card-anim-front {
-      /* Updated: White Glassmorphism */
       background: rgba(255, 255, 255, 0.95);
       border: 1px solid rgba(255,255,255,1);
       z-index: 3; display: flex; flex-direction: column;
       align-items: center; justify-content: center; text-align: center;
-      color: #0d6efd; /* Blue Text */
+      color: #0d6efd; 
       transform: rotate(-3deg);
       box-shadow: 0 20px 50px rgba(0,0,0,0.15);
       animation: float-front 3s infinite ease-in-out alternate;
     }
     .card-anim-front i { 
-        /* Updated: Gradient Icon */
         font-size: 3.5rem; 
         margin-bottom: 10px; 
         background: -webkit-linear-gradient(#0d6efd, #0dcaf0);
@@ -281,7 +282,7 @@
         font-weight: 800; 
         font-size: 1.5rem; 
         letter-spacing: 1px; 
-        color: #1e293b; /* Dark text for readability */
+        color: #1e293b; 
     }
 
     @keyframes float-front { 0% { transform: translateY(0) rotate(-3deg); } 100% { transform: translateY(-15px) rotate(-3deg); } }
@@ -319,7 +320,8 @@
     <div class="container position-relative d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
         <h1 class="sitename">
-          <span class="logo-prefix">lynk.id/</span><span class="logo-main">RKMAULIDA</span>
+          <span class="logo-prefix">lynk.id</span>
+          <span class="logo-main">RKMAULIDA</span>
         </h1>
       </a>
       <nav id="navmenu" class="navmenu">
@@ -881,7 +883,8 @@
         <div class="col-lg-5 col-md-12 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
              <span class="sitename">
-                <span style="font-size:1.2rem; font-weight:500; color:#888;">lynk.id/</span><span style="background:linear-gradient(135deg, #0d6efd, #0dcaf0); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">RKMAULIDA</span>
+                <span class="logo-prefix">lynk.id</span>
+                <span class="logo-main">RKMAULIDA</span>
              </span>
           </a>
           <p>Platform edukasi dan aset digital terpercaya. Kami membantu kreator dan pebisnis online bertumbuh lebih cepat.</p>
