@@ -45,10 +45,24 @@
       transform: scale(1.05);
     }
 
-    /* --- PERBAIKAN: RIBBON TERLARIS --- */
-    /* Menambahkan z-index tinggi agar pita selalu di atas foto */
+    /* --- PERBAIKAN: RIBBON TERLARIS (Agar tidak tertutup foto) --- */
     .ribbon {
       z-index: 50 !important; 
+    }
+
+    /* --- PERBAIKAN: DESAIN LOGO NAVBAR --- */
+    .sitename {
+      font-family: 'Rubik', sans-serif; /* Font modern */
+      font-size: 1.8rem;
+      font-weight: 800; /* Sangat tebal */
+      letter-spacing: 1px; /* Jarak antar huruf */
+      text-transform: uppercase;
+      /* Efek Gradasi Warna pada Teks */
+      background: linear-gradient(to right, #0d6efd, #0dcaf0); 
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      /* Fallback warna jika browser lama */
+      color: #0d6efd; 
     }
 
     /* Styling Section Promo Bundling */
@@ -755,6 +769,12 @@
     </section>
 
     <section id="faq" class="faq section">
+      
+      <div class="container section-title" data-aos="fade-up">
+        <span class="description-title">Bantuan</span>
+        <h2>Pertanyaan Umum</h2>
+        <p>Hal-hal yang sering ditanyakan seputar pembelian dan produk</p>
+      </div>
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
