@@ -8,12 +8,12 @@
   <meta name="description" content="Pusat produk digital berkualitas: E-book, Course, Template Notion, dan Preset Lightroom.">
   <meta name="keywords" content="rkmaulida, produk digital, ebook bisnis, preset lightroom, kelas online">
 
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://placehold.co/32x32/0d6efd/ffffff?text=R" rel="icon">
+  <link href="https://placehold.co/180x180/0d6efd/ffffff?text=R" rel="apple-touch-icon">
 
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -24,58 +24,47 @@
   <link href="assets/css/main.css" rel="stylesheet">
 
   <style>
-    /* --- GLOBAL STYLE UPDATE --- */
+    /* --- GLOBAL STYLE --- */
     body {
-      font-family: 'Plus Jakarta Sans', sans-serif; /* Font modern bersih */
+      font-family: 'Plus Jakarta Sans', sans-serif;
       color: #444;
+      background-color: #ffffff;
     }
     h1, h2, h3, h4, h5, h6 {
-      font-family: 'Rubik', sans-serif; /* Font heading tebal */
+      font-family: 'Rubik', sans-serif;
     }
 
-    /* --- NAVBAR LOGO STYLING --- */
+    /* --- NAVBAR LOGO --- */
     .sitename {
       font-size: 1.8rem;
       font-weight: 800;
       letter-spacing: -0.5px;
       text-transform: uppercase;
-      /* Efek Gradasi pada Teks */
       background: linear-gradient(135deg, #0d6efd, #0dcaf0); 
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      /* Fallback warna */
       color: #0d6efd;
     }
 
-    /* =========================================
-       HERO SECTION BARU (GAYA LYNK.ID)
-       ========================================= */
+    /* --- HERO SECTION (Lynk.id Style) --- */
     .hero {
       padding: 140px 0 80px 0;
-      background: #f8faff; /* Background putih kebiruan */
+      background: #f8faff;
       position: relative;
       overflow: hidden;
     }
-
-    /* Aura Blur di Background Hero */
     .hero::before {
       content: "";
       position: absolute;
-      top: -10%;
-      right: -5%;
-      width: 500px;
-      height: 500px;
+      top: -10%; right: -5%;
+      width: 500px; height: 500px;
       background: radial-gradient(circle, rgba(37, 99, 235, 0.1) 0%, rgba(255,255,255,0) 70%);
       border-radius: 50%;
       z-index: 0;
       pointer-events: none;
     }
-
-    .hero-content {
-      position: relative;
-      z-index: 2;
-    }
-
+    .hero-content { position: relative; z-index: 2; }
+    
     .hero-title {
       font-size: 3.5rem;
       font-weight: 800;
@@ -85,228 +74,181 @@
     }
     
     .hero-description {
-      font-size: 1.1rem;
+      font-size: 1.15rem;
       color: #64748b;
       margin-bottom: 30px;
       max-width: 90%;
       line-height: 1.6;
     }
 
-    /* Tombol Hero Modern */
+    /* Buttons */
     .btn-primary-modern {
-      background: #0d6efd;
-      color: white;
-      padding: 12px 35px;
-      border-radius: 50px;
-      font-weight: 600;
+      background: #0d6efd; color: white; padding: 12px 35px;
+      border-radius: 50px; font-weight: 600;
       box-shadow: 0 10px 20px rgba(13, 110, 253, 0.2);
-      transition: all 0.3s ease;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      border: none;
+      transition: all 0.3s ease; text-decoration: none;
+      display: inline-flex; align-items: center; border: none;
     }
     .btn-primary-modern:hover {
-      background: #0b5ed7;
-      transform: translateY(-3px);
-      box-shadow: 0 15px 25px rgba(13, 110, 253, 0.3);
-      color: white;
+      background: #0b5ed7; transform: translateY(-3px);
+      box-shadow: 0 15px 25px rgba(13, 110, 253, 0.3); color: white;
     }
 
     .btn-secondary-modern {
-      background: white;
-      color: #0d6efd;
-      padding: 12px 35px;
-      border-radius: 50px;
-      font-weight: 600;
-      border: 1px solid #e2e8f0;
-      margin-left: 10px;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      display: inline-flex;
-      align-items: center;
+      background: white; color: #0d6efd; padding: 12px 35px;
+      border-radius: 50px; font-weight: 600; border: 1px solid #e2e8f0;
+      margin-left: 10px; text-decoration: none; transition: all 0.3s ease;
+      display: inline-flex; align-items: center;
     }
     .btn-secondary-modern:hover {
-      background: #f1f5f9;
-      color: #0b5ed7;
-      border-color: #cbd5e1;
+      background: #f1f5f9; color: #0b5ed7; border-color: #cbd5e1;
     }
 
-    /* VISUAL 3D & GLASSMORPHISM */
+    /* Hero Visual */
     .hero-visual {
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 2;
-      margin-top: 20px;
+      position: relative; display: flex; justify-content: center;
+      align-items: center; z-index: 2; margin-top: 20px;
     }
-
-    .hero-image-wrapper {
-      position: relative;
-      width: 100%;
-      max-width: 480px;
-    }
-
-    /* Gambar 3D Utama */
-    .hero-image {
+    .hero-image-wrapper { position: relative; width: 100%; max-width: 480px; }
+    .hero-img-main {
       width: 100%;
       filter: drop-shadow(0 20px 40px rgba(0,0,0,0.1));
       animation: float-main 6s ease-in-out infinite;
     }
 
-    /* Floating Cards dengan Efek Kaca */
+    /* Floating Cards */
     .floating-card {
       position: absolute;
-      background: rgba(255, 255, 255, 0.75); /* Transparan */
-      backdrop-filter: blur(12px); /* Blur */
-      -webkit-backdrop-filter: blur(12px);
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
       border: 1px solid rgba(255, 255, 255, 0.8);
-      border-radius: 16px;
-      padding: 12px 18px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-      z-index: 3;
+      border-radius: 16px; padding: 12px 18px;
+      display: flex; align-items: center; gap: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); z-index: 3;
     }
-
     .card-icon {
-      width: 40px;
-      height: 40px;
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.2rem;
-      color: white;
+      width: 40px; height: 40px; border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem; color: white;
     }
-    
     .card-info h5 { font-size: 0.9rem; font-weight: 700; margin: 0; color: #334155; }
     .card-info p { font-size: 0.75rem; margin: 0; color: #64748b; }
 
-    /* Posisi Kartu */
+    /* Card Positions & Colors */
     .card-1 { top: 25%; left: -20px; animation: float-card 5s ease-in-out infinite 0s; }
     .icon-1 { background: linear-gradient(135deg, #f59e0b, #d97706); }
-
     .card-2 { bottom: 15%; right: -10px; animation: float-card 5s ease-in-out infinite 1.5s; }
     .icon-2 { background: linear-gradient(135deg, #0d6efd, #0a58ca); }
-
     .card-3 { top: 10%; right: 30px; animation: float-card 6s ease-in-out infinite 0.5s; padding: 8px 12px; }
     .icon-3 { background: linear-gradient(135deg, #198754, #157347); width: 30px; height: 30px; font-size: 0.9rem; }
 
+    /* Hero Stats */
+    .hero-stats {
+       display: flex; gap: 40px; margin-top: 50px;
+       border-top: 1px solid #e2e8f0; padding-top: 30px;
+    }
+    .stat-number-hero {
+      font-size: 2rem; font-weight: 800; color: #0ea2bd;
+      display: block; line-height: 1; margin-bottom: 5px;
+    }
+    .stat-label-hero { font-size: 0.9rem; color: #64748b; font-weight: 500; }
+
+    /* Animations */
     @keyframes float-main { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
     @keyframes float-card { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
 
-    /* Hero Stats (Versi Baru) */
-    .hero-stats {
-       display: flex;
-       gap: 40px; 
-       margin-top: 50px;
-       border-top: 1px solid #e2e8f0;
-       padding-top: 30px;
-    }
-    .stat-item-hero {
-      text-align: left;
-    }
-    .stat-number-hero {
-      font-size: 2rem;
-      font-weight: 800;
-      color: #0ea2bd;
-      display: block;
-      line-height: 1;
-      margin-bottom: 5px;
-    }
-    .stat-label-hero {
-      font-size: 0.9rem;
-      color: #64748b;
-      font-weight: 500;
-    }
-
-    /* --- RESPONSIVE HERO --- */
+    /* --- RESPONSIVE ADJUSTMENTS --- */
     @media (max-width: 991px) {
       .hero { text-align: center; padding-top: 100px; }
       .hero-title { font-size: 2.5rem; }
       .hero-stats { justify-content: center; gap: 20px; }
+      .hero-actions { justify-content: center; }
       .hero-visual { margin-top: 60px; }
       .hero-image-wrapper { max-width: 80%; margin: 0 auto; }
-      .card-1 { left: 0; }
-      .card-2 { right: 0; }
+      .card-1 { left: -10px; } .card-2 { right: -10px; }
     }
 
-    /* =========================================
-       PRODUCT CARDS & RIBBON FIX
-       ========================================= */
+    /* --- PRODUCT CARDS --- */
     .product-img {
-      overflow: hidden;
-      border-radius: 10px;
-      margin-bottom: 20px;
-      height: 220px;
-      background-color: #eee;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative; /* Penting untuk konteks tumpukan */
+      overflow: hidden; border-radius: 10px; margin-bottom: 20px;
+      height: 220px; background-color: #f1f5f9;
+      display: flex; align-items: center; justify-content: center;
+      position: relative;
     }
     .product-img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+      width: 100%; height: 100%; object-fit: cover;
       transition: transform 0.3s ease;
     }
-    .price-card:hover .product-img img {
-      transform: scale(1.05);
-    }
-    /* FIX RIBBON TERTUTUP FOTO */
-    .ribbon {
-      z-index: 50 !important; 
-    }
+    .price-card:hover .product-img img { transform: scale(1.05); }
+    .ribbon { z-index: 50 !important; }
 
-    /* =========================================
-       BUNDLING SECTION ANIMATION
-       ========================================= */
+    /* --- BUNDLING SECTION --- */
     .bundling-section {
       background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
-      color: white;
-      border-radius: 20px;
-      padding: 50px;
-      margin-top: 60px;
-      box-shadow: 0 15px 40px rgba(13, 110, 253, 0.3);
-      overflow: hidden;
-      position: relative;
+      color: white; border-radius: 20px; padding: 50px;
+      margin-top: 60px; box-shadow: 0 15px 40px rgba(13, 110, 253, 0.3);
+      overflow: hidden; position: relative;
     }
     .bundling-price { font-size: 3rem; font-weight: 800; color: #ffc107; line-height: 1; }
     .old-price { text-decoration: line-through; opacity: 0.7; font-size: 1.5rem; margin-bottom: 5px; }
 
-    .bundling-anim-wrapper { position: relative; width: 100%; height: 300px; display: flex; align-items: center; justify-content: center; }
-    .anim-glow { position: absolute; width: 200px; height: 200px; background: rgba(255, 193, 7, 0.3); border-radius: 50%; filter: blur(40px); animation: pulse-glow 3s infinite ease-in-out; }
+    .bundling-anim-wrapper {
+      position: relative; width: 100%; height: 300px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .anim-glow {
+      position: absolute; width: 200px; height: 200px;
+      background: rgba(255, 193, 7, 0.3); border-radius: 50%;
+      filter: blur(40px); animation: pulse-glow 3s infinite ease-in-out;
+    }
     .anim-stack { position: relative; width: 180px; height: 240px; }
-    .anim-card { position: absolute; width: 100%; height: 100%; border-radius: 15px; border: 1px solid rgba(255,255,255,0.2); box-shadow: 0 15px 35px rgba(0,0,0,0.3); transition: all 0.5s ease; }
     
-    .card-anim-back { background: linear-gradient(135deg, #6610f2, #520dc2); top: 0; left: 0; transform: rotate(-10deg) translate(-20px, 10px); z-index: 1; animation: float-back 4s infinite ease-in-out alternate; }
-    .card-anim-mid { background: linear-gradient(135deg, #0dcaf0, #0aa2c0); top: 0; left: 0; transform: rotate(5deg) translate(20px, -5px); z-index: 2; animation: float-mid 3.5s infinite ease-in-out alternate; }
-    .card-anim-front { background: linear-gradient(135deg, #ffc107, #ff9800); top: 0; left: 0; z-index: 3; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #fff; transform: rotate(-3deg); animation: float-front 3s infinite ease-in-out alternate; }
-    
-    .card-anim-front i { font-size: 3rem; margin-bottom: 10px; text-shadow: 0 2px 4px rgba(0,0,0,0.2); }
-    .card-anim-front span { font-weight: 800; font-size: 1.5rem; text-transform: uppercase; letter-spacing: 1px; text-shadow: 0 2px 4px rgba(0,0,0,0.2); }
+    .anim-card {
+      position: absolute; width: 100%; height: 100%;
+      border-radius: 15px; border: 1px solid rgba(255,255,255,0.2);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.3); transition: all 0.5s ease;
+    }
+    .card-anim-back {
+      background: linear-gradient(135deg, #6610f2, #520dc2);
+      transform: rotate(-10deg) translate(-20px, 10px);
+      z-index: 1; animation: float-back 4s infinite ease-in-out alternate;
+    }
+    .card-anim-mid {
+      background: linear-gradient(135deg, #0dcaf0, #0aa2c0);
+      transform: rotate(5deg) translate(20px, -5px);
+      z-index: 2; animation: float-mid 3.5s infinite ease-in-out alternate;
+    }
+    .card-anim-front {
+      background: linear-gradient(135deg, #ffc107, #ff9800);
+      z-index: 3; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; text-align: center;
+      color: #fff; transform: rotate(-3deg);
+      animation: float-front 3s infinite ease-in-out alternate;
+    }
+    .card-anim-front i { font-size: 3rem; margin-bottom: 10px; }
+    .card-anim-front span { font-weight: 800; font-size: 1.5rem; letter-spacing: 1px; }
 
     @keyframes float-front { 0% { transform: translateY(0) rotate(-3deg); } 100% { transform: translateY(-15px) rotate(-3deg); } }
     @keyframes float-mid { 0% { transform: translateY(0) rotate(5deg) translate(20px, -5px); } 100% { transform: translateY(-10px) rotate(5deg) translate(20px, -5px); } }
     @keyframes float-back { 0% { transform: translateY(0) rotate(-10deg) translate(-20px, 10px); } 100% { transform: translateY(-12px) rotate(-10deg) translate(-20px, 10px); } }
     @keyframes pulse-glow { 0% { transform: scale(0.8); opacity: 0.5; } 50% { transform: scale(1.2); opacity: 0.8; } 100% { transform: scale(0.8); opacity: 0.5; } }
 
-    /* =========================================
-       ABOUT STATS (1 Baris Fix)
-       ========================================= */
-    .stats-grid { display: flex !important; flex-direction: row !important; flex-wrap: nowrap !important; justify-content: space-between; gap: 10px; margin-top: 30px; width: 100%; }
-    .stat-item { flex: 1 !important; background: #ffffff; padding: 15px 5px; border-radius: 8px; border: 1px solid #e0e0e0; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.03); min-width: 0; }
-    .stat-number { font-size: 1.5rem; font-weight: bold; color: #0ea2bd; margin-bottom: 5px; }
-    .stat-label { font-size: 0.8rem; color: #666; white-space: nowrap; }
-    @media (max-width: 576px) { .stat-number { font-size: 1.1rem; } .stat-label { font-size: 0.7rem; } }
+    /* Fix Bundling di Mobile */
+    @media (max-width: 768px) {
+        .bundling-anim-wrapper { height: 250px; transform: scale(0.8); }
+        .bundling-section { padding: 30px 20px; }
+        .bundling-price { font-size: 2.5rem; }
+    }
 
-    /* Testimonials & Others */
+    /* --- ABOUT STATS --- */
+    .stats-grid { display: flex !important; flex-wrap: wrap; justify-content: space-between; gap: 10px; margin-top: 30px; }
+    .stat-item { flex: 1; min-width: 100px; background: #fff; padding: 15px 5px; border-radius: 8px; border: 1px solid #e0e0e0; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.03); }
+    .stat-number { font-size: 1.5rem; font-weight: bold; color: #0ea2bd; }
+    .stat-label { font-size: 0.8rem; color: #666; }
+
+    /* --- TESTIMONIALS --- */
     .testimonial-item { background-color: #fff; box-shadow: 0px 0 20px rgba(0, 0, 0, 0.05); padding: 30px; border-radius: 10px; height: 100%; display: flex; flex-direction: column; }
-    .testimonial-item .stars { margin-bottom: 15px; } .testimonial-item .stars i { color: #ffc107; font-size: 18px; }
+    .testimonial-item .stars { margin-bottom: 15px; color: #ffc107; }
     .testimonial-item p { font-style: italic; margin-bottom: 20px; flex-grow: 1; }
     .testimonial-item .profile { display: flex; align-items: center; margin-top: auto; }
     .testimonial-item .testimonial-img { width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 15px; border: 3px solid #f1f1f1; }
@@ -319,11 +261,9 @@
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container position-relative d-flex align-items-center justify-content-between">
-
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
         <h1 class="sitename">RKMAULIDA</h1>
       </a>
-
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Beranda</a></li>
@@ -336,9 +276,7 @@
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
       <a class="btn-getstarted" href="#pricing">Belanja Sekarang</a>
-
     </div>
   </header>
 
@@ -373,16 +311,13 @@
                   <span class="stat-label-hero">Akses Otomatis</span>
                 </div>
               </div>
-
             </div>
           </div>
 
           <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="200">
             <div class="hero-visual">
               <div class="hero-image-wrapper">
-                
-                
-                <img src="assets/img/illustration/illustration-15.webp" class="img-fluid hero-img-main" alt="Hero Image">
+                <img src="https://placehold.co/600x600/f1f5f9/0d6efd?text=Hero+Image" class="img-fluid hero-img-main" alt="Hero Image">
 
                 <div class="floating-card card-1">
                   <div class="card-icon icon-1"><i class="bi bi-book-fill"></i></div>
@@ -391,7 +326,6 @@
                     <p>Best Seller</p>
                   </div>
                 </div>
-
                 <div class="floating-card card-2">
                   <div class="card-icon icon-2"><i class="bi bi-camera-fill"></i></div>
                   <div class="card-info">
@@ -399,14 +333,12 @@
                     <p>Lightroom</p>
                   </div>
                 </div>
-
                 <div class="floating-card card-3">
                   <div class="card-icon icon-3"><i class="bi bi-check-lg"></i></div>
                   <div class="card-info">
                     <h5>Verified</h5>
                   </div>
                 </div>
-
               </div>
             </div>
           </div>
@@ -414,6 +346,7 @@
         </div>
       </div>
     </section>
+
     <section id="about" class="about section">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-5">
@@ -428,22 +361,21 @@
               
               <div class="stats-grid">
                 <div class="stat-item">
-                  <div class="stat-number">50+</div><div class="stat-label">Modul Belajar</div>
+                  <div class="stat-number">50+</div><div class="stat-label">Modul</div>
                 </div>
                 <div class="stat-item">
-                  <div class="stat-number">100%</div><div class="stat-label">Uang Kembali</div>
+                  <div class="stat-number">100%</div><div class="stat-label">Garansi</div>
                 </div>
                 <div class="stat-item">
-                  <div class="stat-number">1k+</div><div class="stat-label">Komunitas</div>
+                  <div class="stat-number">1k+</div><div class="stat-label">Member</div>
                 </div>
               </div>
-
             </div>
           </div>
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
             <div class="visual-section">
               <div class="main-image-container">
-                <img src="assets/img/about/about-8.webp" alt="Tentang RKMAULIDA" class="img-fluid main-visual">
+                 <img src="https://placehold.co/600x400/e2e8f0/64748b?text=About+Us" alt="Tentang RKMAULIDA" class="img-fluid main-visual" style="border-radius:16px;">
               </div>
             </div>
           </div>
@@ -495,7 +427,7 @@
                   </div>
                 </div>
                 <div class="col-lg-7">
-                  <div class="visual-content"><img src="assets/img/features/features-1.webp" class="img-fluid" alt=""></div>
+                  <div class="visual-content"><img src="https://placehold.co/600x400/f8f9fa/dee2e6?text=Fitur+Otomatis" class="img-fluid" alt=""></div>
                 </div>
               </div>
             </div>
@@ -512,7 +444,7 @@
                   </div>
                 </div>
                 <div class="col-lg-7">
-                  <div class="visual-content"><img src="assets/img/features/features-2.webp" class="img-fluid" alt=""></div>
+                  <div class="visual-content"><img src="https://placehold.co/600x400/f8f9fa/dee2e6?text=Fitur+Aman" class="img-fluid" alt=""></div>
                 </div>
               </div>
             </div>
@@ -525,7 +457,7 @@
                   </div>
                 </div>
                 <div class="col-lg-7">
-                  <div class="visual-content"><img src="assets/img/features/features-3.webp" class="img-fluid" alt=""></div>
+                  <div class="visual-content"><img src="https://placehold.co/600x400/f8f9fa/dee2e6?text=Fitur+Multi-Device" class="img-fluid" alt=""></div>
                 </div>
               </div>
             </div>
@@ -540,7 +472,6 @@
         <h2>Kategori Produk</h2>
         <p>Pilih jenis produk digital yang sesuai dengan kebutuhan Anda</p>
       </div>
-
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="services-grid">
           <div class="row g-4">
@@ -616,9 +547,8 @@
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
             <article class="price-card h-100">
               <div class="product-img">
-                <img src="assets/img/blog/blog-1.jpg" alt="Ebook Bisnis">
+                <img src="https://placehold.co/400x300/e9ecef/495057?text=E-Book+Cover" alt="Ebook Bisnis">
               </div>
-              
               <div class="card-head">
                 <span class="badge-title">E-BOOK</span>
                 <h3 class="title">Panduan Karir Digital</h3>
@@ -642,9 +572,8 @@
             <article class="price-card featured h-100 position-relative">
               <div class="ribbon"><i class="bi bi-fire"></i> Terlaris</div>
               <div class="product-img">
-                <img src="assets/img/blog/blog-2.jpg" alt="Kelas Canva">
+                <img src="https://placehold.co/400x300/ffec99/856404?text=Course+Cover" alt="Kelas Canva">
               </div>
-
               <div class="card-head">
                 <span class="badge-title">COURSE</span>
                 <h3 class="title">Jago Desain Canva</h3>
@@ -667,9 +596,8 @@
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
             <article class="price-card h-100">
               <div class="product-img">
-                <img src="assets/img/blog/blog-3.jpg" alt="Preset Lightroom">
+                <img src="https://placehold.co/400x300/dbeafe/1e40af?text=Preset+Cover" alt="Preset Lightroom">
               </div>
-
               <div class="card-head">
                 <span class="badge-title">PRESET</span>
                 <h3 class="title">Selebgram Preset Pack</h3>
@@ -759,17 +687,10 @@
             {
               "loop": true,
               "speed": 600,
-              "autoplay": {
-                "delay": 3000,
-                "disableOnInteraction": false
-              },
+              "autoplay": { "delay": 3000, "disableOnInteraction": false },
               "slidesPerView": 1,
               "spaceBetween": 20,
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
+              "pagination": { "el": ".swiper-pagination", "type": "bullets", "clickable": true },
               "breakpoints": {
                 "320": { "slidesPerView": 1, "spaceBetween": 20 },
                 "768": { "slidesPerView": 2, "spaceBetween": 20 },
@@ -778,71 +699,46 @@
             }
           </script>
           <div class="swiper-wrapper">
-
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
-                <p>
-                  "Gila sih, E-booknya daging semua isinya! Dulu bingung mau mulai dari mana, sekarang udah pecah telor dapat klien pertama dari panduan ini."
-                </p>
+                <p>"Gila sih, E-booknya daging semua isinya! Dulu bingung mau mulai dari mana, sekarang udah pecah telor dapat klien pertama dari panduan ini."</p>
                 <div class="profile">
-                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                  <div>
-                    <h3>Angga CEO</h3>
-                    <h4>CEO PT Cinta Abadi</h4>
-                  </div>
+                  <img src="https://placehold.co/100x100/e2e8f0/64748b?text=User" class="testimonial-img" alt="">
+                  <div><h3>Angga CEO</h3><h4>CEO PT Cinta Abadi</h4></div>
                 </div>
               </div>
             </div>
-
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
-                <p>
-                  "Presetnya estetik parah. Foto liburan saya jadi kayak foto selebgram. Worth it banget harga segitu dapat banyak preset."
-                </p>
+                <p>"Presetnya estetik parah. Foto liburan saya jadi kayak foto selebgram. Worth it banget harga segitu dapat banyak preset."</p>
                 <div class="profile">
-                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                  <div>
-                    <h3>Mbak AL</h3>
-                    <h4>Mahasiswi</h4>
-                  </div>
+                  <img src="https://placehold.co/100x100/e2e8f0/64748b?text=User" class="testimonial-img" alt="">
+                  <div><h3>Mbak AL</h3><h4>Mahasiswi</h4></div>
                 </div>
               </div>
             </div>
-
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
-                <p>
-                  "Kelas Canvanya mudah dipahami. Saya ibu rumah tangga gaptek aja bisa ngikutin. Sekarang bisa bantu suami bikin desain promosi."
-                </p>
+                <p>"Kelas Canvanya mudah dipahami. Saya ibu rumah tangga gaptek aja bisa ngikutin. Sekarang bisa bantu suami bikin desain promosi."</p>
                 <div class="profile">
-                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                  <div>
-                    <h3>Culiss</h3>
-                    <h4>Konten Kreator</h4>
-                  </div>
+                  <img src="https://placehold.co/100x100/e2e8f0/64748b?text=User" class="testimonial-img" alt="">
+                  <div><h3>Culiss</h3><h4>Konten Kreator</h4></div>
                 </div>
               </div>
             </div>
-
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
-                <p>
-                  "Ambil paket bundling pas promo, untung banget! Materi lengkap, support adminnya juga ramah dan fast respon."
-                </p>
+                <p>"Ambil paket bundling pas promo, untung banget! Materi lengkap, support adminnya juga ramah dan fast respon."</p>
                 <div class="profile">
-                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                  <div>
-                    <h3>Hudaaaaaaaaa</h3>
-                    <h4>Calon BOS</h4>
-                  </div>
+                  <img src="https://placehold.co/100x100/e2e8f0/64748b?text=User" class="testimonial-img" alt="">
+                  <div><h3>Hudaaaaaaaaa</h3><h4>Calon BOS</h4></div>
                 </div>
               </div>
             </div>
-
           </div>
           <div class="swiper-pagination"></div>
         </div>
@@ -850,46 +746,28 @@
     </section>
 
     <section id="faq" class="faq section">
-      
       <div class="container section-title" data-aos="fade-up">
         <span class="description-title">Bantuan</span>
         <h2>Pertanyaan Umum</h2>
         <p>Hal-hal yang sering ditanyakan seputar pembelian dan produk</p>
       </div>
-
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
             <div class="faq-container">
               <div class="faq-item faq-active">
                 <h3>Apakah produk dikirim fisik ke rumah?</h3>
-                <div class="faq-content">
-                  <p>Tidak. Semua produk di RKMAULIDA adalah produk digital (Softfile). Anda akan mendapatkan link download melalui email/WhatsApp setelah pembayaran.</p>
-                </div>
+                <div class="faq-content"><p>Tidak. Semua produk di RKMAULIDA adalah produk digital (Softfile). Anda akan mendapatkan link download melalui email/WhatsApp setelah pembayaran.</p></div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div>
-              
               <div class="faq-item">
                 <h3>Bagaimana jika link download error?</h3>
-                <div class="faq-content">
-                  <p>Jangan khawatir, silakan hubungi admin melalui WhatsApp. Kami akan mengirimkan link alternatif secepatnya.</p>
-                </div>
+                <div class="faq-content"><p>Jangan khawatir, silakan hubungi admin melalui WhatsApp. Kami akan mengirimkan link alternatif secepatnya.</p></div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div>
-
               <div class="faq-item">
                 <h3>Metode pembayaran apa saja?</h3>
-                <div class="faq-content">
-                  <p>Kami menerima Transfer Bank (BCA, Mandiri, BRI), E-Wallet (GoPay, Dana, OVO, ShopeePay), dan QRIS.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>
-
-              <div class="faq-item">
-                <h3>Apakah boleh dijual kembali?</h3>
-                <div class="faq-content">
-                  <p>Produk yang dibeli hanya untuk penggunaan pribadi (Personal Use). Dilarang keras menyebarluaskan atau menjual kembali tanpa izin tertulis.</p>
-                </div>
+                <div class="faq-content"><p>Kami menerima Transfer Bank (BCA, Mandiri, BRI), E-Wallet (GoPay, Dana, OVO, ShopeePay), dan QRIS.</p></div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div>
             </div>
@@ -904,7 +782,6 @@
         <h2>Hubungi Kami</h2>
         <p>Punya pertanyaan lain? Tim kami siap membantu Anda.</p>
       </div>
-
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row g-5">
           <div class="col-lg-6">
@@ -913,22 +790,12 @@
               <h2 class="display-5 mb-4">Kami Siap Membantu 24/7</h2>
               <p class="lead mb-4">Jangan ragu untuk menghubungi kami jika ada kendala saat checkout atau download file.</p>
               <div class="contact-info mt-5">
-                <div class="info-item d-flex mb-3">
-                  <i class="bi bi-envelope-at me-3"></i>
-                  <span>admin@rkmaulida.com</span>
-                </div>
-                <div class="info-item d-flex mb-3">
-                  <i class="bi bi-whatsapp me-3"></i>
-                  <span>+62 812 3456 7890</span>
-                </div>
-                <div class="info-item d-flex mb-4">
-                  <i class="bi bi-geo-alt me-3"></i>
-                  <span>Jakarta, Indonesia</span>
-                </div>
+                <div class="info-item d-flex mb-3"><i class="bi bi-envelope-at me-3"></i><span>admin@rkmaulida.com</span></div>
+                <div class="info-item d-flex mb-3"><i class="bi bi-whatsapp me-3"></i><span>+62 812 3456 7890</span></div>
+                <div class="info-item d-flex mb-4"><i class="bi bi-geo-alt me-3"></i><span>Jakarta, Indonesia</span></div>
               </div>
             </div>
           </div>
-
           <div class="col-lg-6">
             <div class="contact-form card" data-aos="fade-up" data-aos-delay="300">
               <div class="card-body p-4 p-lg-5">
@@ -938,9 +805,7 @@
                     <div class="col-12"><input type="email" name="email" class="form-control" placeholder="Email Anda" required></div>
                     <div class="col-12"><input type="text" name="subject" class="form-control" placeholder="Subjek / Kendala" required></div>
                     <div class="col-12"><textarea class="form-control" name="message" rows="6" placeholder="Tulis pesan Anda di sini..." required></textarea></div>
-                    <div class="col-12 text-center">
-                      <button type="submit" class="btn btn-submit w-100">Kirim Pesan</button>
-                    </div>
+                    <div class="col-12 text-center"><button type="submit" class="btn btn-submit w-100">Kirim Pesan</button></div>
                   </div>
                 </form>
               </div>
@@ -961,12 +826,11 @@
           </a>
           <p>Platform edukasi dan aset digital terpercaya. Kami membantu kreator dan pebisnis online bertumbuh lebih cepat.</p>
           <div class="social-links d-flex mt-4">
-            <a href="https://www.instagram.com/rkmaulidaa?igsh=MWFzcHhqZGlvdW93eQ%3D%3D&utm_source=qr"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.tiktok.com/@rk.maulida?_r=1&_t=ZS-93QPkAwXPM4"><i class="bi bi-tiktok"></i></a>
-            <a href=""><i class="bi bi-youtube"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-tiktok"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
           </div>
         </div>
-
         <div class="col-lg-2 col-6 footer-links">
           <h4>Menu Utama</h4>
           <ul>
@@ -976,7 +840,6 @@
             <li><a href="#bundling">Promo</a></li>
           </ul>
         </div>
-
         <div class="col-lg-2 col-6 footer-links">
           <h4>Kategori</h4>
           <ul>
@@ -986,7 +849,6 @@
             <li><a href="#">Template</a></li>
           </ul>
         </div>
-
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
           <h4>Hubungi Kami</h4>
           <p><strong>WhatsApp:</strong> +62 812 3456 7890</p>
@@ -995,12 +857,8 @@
         </div>
       </div>
     </div>
-
     <div class="container copyright text-center mt-4">
       <p>© <span>Copyright</span> <strong class="px-1 sitename">RKMAULIDA</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
     </div>
   </footer>
 
@@ -1012,7 +870,6 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-
   <script src="assets/js/main.js"></script>
 
 </body>
