@@ -28,7 +28,6 @@
     body {
       font-family: 'Plus Jakarta Sans', sans-serif; /* Font modern bersih */
       color: #444;
-      overflow-x: hidden; /* Mencegah scroll samping */
     }
     h1, h2, h3, h4, h5, h6 {
       font-family: 'Rubik', sans-serif; /* Font heading tebal */
@@ -40,23 +39,25 @@
       font-weight: 800;
       letter-spacing: -0.5px;
       text-transform: uppercase;
+      /* Efek Gradasi pada Teks */
       background: linear-gradient(135deg, #0d6efd, #0dcaf0); 
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      /* Fallback warna */
       color: #0d6efd;
     }
 
     /* =========================================
-       HERO SECTION (GAYA LYNK.ID - GAMBAR BESAR)
+       HERO SECTION BARU (GAYA LYNK.ID)
        ========================================= */
     .hero {
       padding: 140px 0 80px 0;
-      background: #f8faff; 
+      background: #f8faff; /* Background putih kebiruan */
       position: relative;
       overflow: hidden;
     }
 
-    /* Aura Blur di Background */
+    /* Aura Blur di Background Hero */
     .hero::before {
       content: "";
       position: absolute;
@@ -144,8 +145,7 @@
     .hero-image-wrapper {
       position: relative;
       width: 100%;
-      /* UPDATE: Max-width dihapus agar gambar bisa besar */
-      max-width: 100%; 
+      max-width: 480px;
     }
 
     /* Gambar 3D Utama */
@@ -153,15 +153,13 @@
       width: 100%;
       filter: drop-shadow(0 20px 40px rgba(0,0,0,0.1));
       animation: float-main 6s ease-in-out infinite;
-      /* UPDATE: Scale 1.1 untuk efek zoom */
-      transform: scale(1.1); 
     }
 
     /* Floating Cards dengan Efek Kaca */
     .floating-card {
       position: absolute;
-      background: rgba(255, 255, 255, 0.75);
-      backdrop-filter: blur(12px);
+      background: rgba(255, 255, 255, 0.75); /* Transparan */
+      backdrop-filter: blur(12px); /* Blur */
       -webkit-backdrop-filter: blur(12px);
       border: 1px solid rgba(255, 255, 255, 0.8);
       border-radius: 16px;
@@ -197,10 +195,10 @@
     .card-3 { top: 10%; right: 30px; animation: float-card 6s ease-in-out infinite 0.5s; padding: 8px 12px; }
     .icon-3 { background: linear-gradient(135deg, #198754, #157347); width: 30px; height: 30px; font-size: 0.9rem; }
 
-    @keyframes float-main { 0%, 100% { transform: translateY(0) scale(1.1); } 50% { transform: translateY(-15px) scale(1.1); } }
+    @keyframes float-main { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
     @keyframes float-card { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
 
-    /* Hero Stats */
+    /* Hero Stats (Versi Baru) */
     .hero-stats {
        display: flex;
        gap: 40px; 
@@ -208,22 +206,36 @@
        border-top: 1px solid #e2e8f0;
        padding-top: 30px;
     }
-    .stat-item-hero { text-align: left; }
-    .stat-number-hero { font-size: 2rem; font-weight: 800; color: #0ea2bd; display: block; line-height: 1; margin-bottom: 5px; }
-    .stat-label-hero { font-size: 0.9rem; color: #64748b; font-weight: 500; }
+    .stat-item-hero {
+      text-align: left;
+    }
+    .stat-number-hero {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #0ea2bd;
+      display: block;
+      line-height: 1;
+      margin-bottom: 5px;
+    }
+    .stat-label-hero {
+      font-size: 0.9rem;
+      color: #64748b;
+      font-weight: 500;
+    }
 
-    /* Responsive Hero */
+    /* --- RESPONSIVE HERO --- */
     @media (max-width: 991px) {
       .hero { text-align: center; padding-top: 100px; }
       .hero-title { font-size: 2.5rem; }
       .hero-stats { justify-content: center; gap: 20px; }
       .hero-visual { margin-top: 60px; }
+      .hero-image-wrapper { max-width: 80%; margin: 0 auto; }
       .card-1 { left: 0; }
       .card-2 { right: 0; }
     }
 
     /* =========================================
-       PRODUCT CARDS & RIBBON
+       PRODUCT CARDS & RIBBON FIX
        ========================================= */
     .product-img {
       overflow: hidden;
@@ -234,7 +246,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      position: relative;
+      position: relative; /* Penting untuk konteks tumpukan */
     }
     .product-img img {
       width: 100%;
@@ -242,11 +254,16 @@
       object-fit: cover;
       transition: transform 0.3s ease;
     }
-    .price-card:hover .product-img img { transform: scale(1.05); }
-    .ribbon { z-index: 50 !important; }
+    .price-card:hover .product-img img {
+      transform: scale(1.05);
+    }
+    /* FIX RIBBON TERTUTUP FOTO */
+    .ribbon {
+      z-index: 50 !important; 
+    }
 
     /* =========================================
-       BUNDLING ANIMATION
+       BUNDLING SECTION ANIMATION
        ========================================= */
     .bundling-section {
       background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
@@ -327,17 +344,17 @@
 
   <main class="main">
 
-    <section id="hero" class="hero section">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <section id="hero" class="hero">
+      <div class="container">
         <div class="row align-items-center">
           
-          <div class="col-lg-5 order-2 order-lg-1" data-aos="fade-right" data-aos-delay="200">
+          <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-right">
             <div class="hero-content">
               <h1 class="hero-title">Aset Digital Premium untuk Kreator</h1>
               <p class="hero-description">
                 Tingkatkan produktivitas dan estetika kontenmu dengan koleksi E-book, Template, dan Preset berkualitas tinggi. Sekali bayar, akses selamanya.
               </p>
-              <div class="hero-actions d-flex gap-3 justify-content-lg-start justify-content-center">
+              <div class="hero-actions d-flex justify-content-lg-start justify-content-center">
                 <a href="#pricing" class="btn-primary-modern">Lihat Katalog <i class="bi bi-arrow-right ms-2"></i></a>
                 <a href="#bundling" class="btn-secondary-modern">Promo Spesial</a>
               </div>
@@ -360,11 +377,12 @@
             </div>
           </div>
 
-          <div class="col-lg-7 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="300">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="200">
             <div class="hero-visual">
               <div class="hero-image-wrapper">
                 
-                <img src="assets/img/illustration/illustration-15.webp" class="hero-image" alt="Hero Image">
+                
+                <img src="https://cdni.iconscout.com/illustration/premium/thumb/business-woman-working-on-laptop-illustration-download-in-svg-png-gif-file-formats--young-lady-female-office-employee-character-3d-pack-people-illustrations-4715124.png?f=webp" class="hero-image" alt="3D Character">
 
                 <div class="floating-card card-1">
                   <div class="card-icon icon-1"><i class="bi bi-book-fill"></i></div>
@@ -396,7 +414,6 @@
         </div>
       </div>
     </section>
-
     <section id="about" class="about section">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-5">
