@@ -236,6 +236,53 @@
         height: auto;
         padding-bottom: 40px; /* Ruang untuk pagination di bawah */
     }
+
+    /* --- PERBAIKAN STATISTIK 1 BARIS --- */
+    .stats-grid {
+      display: flex;       /* KUNCI: Membuat elemen sejajar ke samping */
+      gap: 15px;           /* Memberi jarak antar kotak */
+      margin-top: 30px;
+      width: 100%;
+    }
+
+    .stat-item {
+      flex: 1;             /* Memaksa semua kotak punya lebar yang sama rata */
+      background: #ffffff; /* Latar putih */
+      padding: 20px 10px;  /* Ruang di dalam kotak */
+      border-radius: 8px;  /* Sudut melengkung */
+      border: 1px solid #e0e0e0; /* Garis tepi halus seperti di gambar */
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.03); /* Bayangan tipis agar elegan */
+    }
+
+    .stat-number {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #0ea2bd; /* Warna biru/tosca sesuai tema */
+      margin-bottom: 5px;
+    }
+
+    .stat-label {
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    /* Agar di HP tetap rapi (tetap 1 baris tapi font mengecil, atau jadi 2 baris jika terlalu sempit) */
+    @media (max-width: 576px) {
+      .stats-grid {
+        gap: 10px;
+      }
+      .stat-number {
+        font-size: 1.2rem;
+      }
+      .stat-label {
+        font-size: 0.8rem;
+      }
+    }
   </style>
 
 </head>
