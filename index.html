@@ -176,13 +176,40 @@
         50% { transform: scale(1.2); opacity: 0.8; }
         100% { transform: scale(0.8); opacity: 0.5; }
     }
+    
     /* ---------------------------------------------------- */
+    /* PERBAIKAN STYLING TESTIMONI DI SINI */
+    /* ---------------------------------------------------- */
+    
+    .testimonial-item {
+        background-color: #fff; /* Memberikan warna latar putih */
+        box-shadow: 0px 0 20px rgba(0, 0, 0, 0.05); /* Bayangan halus */
+        padding: 30px; /* Jarak dalam agar teks tidak mepet */
+        border-radius: 10px;
+        height: 100%; /* Agar tinggi kartu sama rata */
+        display: flex;
+        flex-direction: column;
+    }
 
-    /* Styling Foto Profil di Testimoni */
+    .testimonial-item .stars {
+        margin-bottom: 15px;
+    }
+
+    .testimonial-item .stars i {
+        color: #ffc107; /* Warna kuning emas untuk bintang */
+        font-size: 18px;
+    }
+
+    .testimonial-item p {
+        font-style: italic;
+        margin-bottom: 20px;
+        flex-grow: 1; /* Mendorong profil ke bawah agar rata */
+    }
+
     .testimonial-item .profile {
       display: flex;
       align-items: center;
-      margin-top: auto;
+      margin-top: auto; /* Memastikan profil selalu di bawah */
     }
     .testimonial-item .testimonial-img {
       width: 60px;
@@ -196,12 +223,18 @@
       font-size: 18px;
       font-weight: bold;
       margin: 0;
-      color: var(--heading-color);
+      color: #333;
     }
     .testimonial-item h4 {
       font-size: 14px;
       color: #999;
       margin: 0;
+    }
+    
+    /* Tambahan agar slide swiper punya tinggi yang sama */
+    .swiper-slide {
+        height: auto;
+        padding-bottom: 40px; /* Ruang untuk pagination di bawah */
     }
   </style>
 
@@ -634,15 +667,17 @@
                 "delay": 3000,
                 "disableOnInteraction": false
               },
-              "slidesPerView": "auto",
+              "slidesPerView": 1,
+              "spaceBetween": 20,
               "pagination": {
                 "el": ".swiper-pagination",
                 "type": "bullets",
                 "clickable": true
               },
               "breakpoints": {
-                "320": { "slidesPerView": 1, "spaceBetween": 40 },
-                "1200": { "slidesPerView": 3, "spaceBetween": 20 }
+                "320": { "slidesPerView": 1, "spaceBetween": 20 },
+                "768": { "slidesPerView": 2, "spaceBetween": 20 },
+                "1200": { "slidesPerView": 3, "spaceBetween": 30 }
               }
             }
           </script>
