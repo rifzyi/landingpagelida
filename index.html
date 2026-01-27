@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Toko Digital Kreator - Template Landify</title>
-  <meta name="description" content="Temukan berbagai produk digital terbaik: E-book, Kelas Online, dan Preset Lightroom.">
-  <meta name="keywords" content="produk digital, lynk.id, ebook, kursus online, template notion">
+  <title>RKMAULIDA - Pusat Produk Digital Terpercaya</title>
+  <meta name="description" content="Platform belajar digital dan aset kreatif. E-book, Course, Template, dan Preset Lightroom berkualitas.">
+  <meta name="keywords" content="rkmaulida, produk digital, ebook bisnis, preset lightroom, kelas online">
 
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -23,7 +23,57 @@
 
   <link href="assets/css/main.css" rel="stylesheet">
 
-  </head>
+  <style>
+    /* Styling Foto Produk */
+    .product-img {
+      overflow: hidden;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      height: 200px;
+      background-color: #f0f0f0; /* Placeholder color */
+    }
+    .product-img img {
+      transition: transform 0.3s ease;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .price-card:hover .product-img img {
+      transform: scale(1.05);
+    }
+
+    /* Styling Section Bundling */
+    .bundling-section {
+      background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+      color: white;
+      border-radius: 20px;
+      padding: 40px;
+      margin-top: 50px;
+      box-shadow: 0 10px 30px rgba(13, 110, 253, 0.3);
+    }
+    .bundling-price {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #ffc107;
+    }
+    .old-price {
+      text-decoration: line-through;
+      opacity: 0.7;
+      font-size: 1.2rem;
+    }
+
+    /* Styling Testimoni Foto */
+    .testimonial-item .testimonial-img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+      border: 3px solid #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
 
 <body class="index-page">
 
@@ -31,22 +81,22 @@
     <div class="container position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <h1 class="sitename">Rifzyi.Digital</h1>
+        <h1 class="sitename">RKMAULIDA</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Beranda</a></li>
-          <li><a href="#about">Tentang Kreator</a></li>
-          <li><a href="#features">Keunggulan</a></li>
-          <li><a href="#services">Kategori</a></li>
-          <li><a href="#pricing">Produk</a></li>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#products">Produk</a></li>
+          <li><a href="#bundling">Promo</a></li>
+          <li><a href="#faq">FAQ</a></li>
           <li><a href="#contact">Kontak</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="#pricing">Beli Produk</a>
+      <a class="btn-getstarted" href="#products">Belanja Sekarang</a>
 
     </div>
   </header>
@@ -54,532 +104,374 @@
   <main class="main">
 
     <section id="hero" class="hero section">
-
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row align-items-center">
-
           <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-right" data-aos-delay="200">
             <div class="hero-content">
-              <h1 class="hero-title">Tingkatkan Skill dengan Produk Digital Terbaik</h1>
-              <p class="hero-description">Akses E-Book, Video Course, dan Template siap pakai untuk mempercepat karir dan produktivitas Anda. Belajar langsung dari praktisi.</p>
+              <h1 class="hero-title">Upgrade Skill Anda dengan Produk Digital Premium</h1>
+              <p class="hero-description">Temukan E-book, Kursus Online, dan Aset Kreatif berkualitas tinggi dari RKMAULIDA untuk menunjang karir dan bisnis Anda.</p>
               <div class="hero-actions">
-                <a href="#pricing" class="btn-primary">Lihat Katalog</a>
+                <a href="#products" class="btn-primary">Lihat Katalog</a>
                 <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="btn-secondary glightbox">
                   <i class="bi bi-play-circle"></i>
-                  <span>Preview Materi</span>
+                  <span>Video Intro</span>
                 </a>
               </div>
               <div class="hero-stats">
                 <div class="stat-item">
-                  <span class="stat-number">50+</span>
-                  <span class="stat-label">Produk Digital</span>
-                </div>
-                <div class="stat-item">
-                  <span class="stat-number">10k+</span>
-                  <span class="stat-label">Member Bergabung</span>
+                  <span class="stat-number">500+</span>
+                  <span class="stat-label">Member Puas</span>
                 </div>
                 <div class="stat-item">
                   <span class="stat-number">4.9</span>
-                  <span class="stat-label">Rating Rata-rata</span>
+                  <span class="stat-label">Rating</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">24/7</span>
+                  <span class="stat-label">Akses Instan</span>
                 </div>
               </div>
             </div>
           </div>
-
           <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="300">
             <div class="hero-visual">
               <div class="hero-image-wrapper">
-                <img src="assets/img/illustration/illustration-15.webp" class="img-fluid hero-image" alt="Ilustrasi Produk Digital">
-                <div class="floating-elements">
-                  <div class="floating-card card-1">
-                    <i class="bi bi-book"></i>
-                    <span>E-Book</span>
-                  </div>
-                  <div class="floating-card card-2">
-                    <i class="bi bi-play-btn"></i>
-                    <span>Course</span>
-                  </div>
-                  <div class="floating-card card-3">
-                    <i class="bi bi-file-earmark-code"></i>
-                    <span>Template</span>
-                  </div>
-                </div>
+                <img src="assets/img/illustration/illustration-15.webp" class="img-fluid hero-image" alt="Hero Image">
               </div>
             </div>
           </div>
-
         </div>
-
       </div>
+    </section>
 
-    </section><section id="about" class="about section">
+    <section id="clients" class="clients section">
+      <div class="container">
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": { "delay": 5000 },
+              "slidesPerView": "auto",
+              "pagination": { "el": ".swiper-pagination", "type": "bullets", "clickable": true },
+              "breakpoints": {
+                "320": { "slidesPerView": 2, "spaceBetween": 40 },
+                "480": { "slidesPerView": 3, "spaceBetween": 60 },
+                "640": { "slidesPerView": 4, "spaceBetween": 80 },
+                "992": { "slidesPerView": 6, "spaceBetween": 120 }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/clients/clients-1.webp" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/clients-2.webp" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/clients-3.webp" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/clients-4.webp" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/clients-5.webp" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/clients-6.webp" class="img-fluid" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section id="about" class="about section">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row gy-5">
-
           <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
             <div class="content-wrapper">
               <div class="section-header">
-                <span class="section-badge">TENTANG KREATOR</span>
-                <h2>Berbagi Ilmu & Tools Produktivitas</h2>
+                <span class="section-badge">TENTANG RKMAULIDA</span>
+                <h2>Partner Belajar Digital Anda</h2>
               </div>
-
-              <p class="lead-text">Halo! Saya Ahmad Rifa'i. Saya membuat produk digital untuk membantu Anda menguasai skill pemrograman, desain, dan manajemen waktu.</p>
-
-              <p class="description-text">Semua materi disusun berdasarkan pengalaman nyata di industri, disajikan dalam bahasa Indonesia yang mudah dipahami, dan dapat diakses selamanya setelah sekali pembelian.</p>
-
+              <p class="lead-text">Kami berdedikasi menyediakan materi pembelajaran yang praktis, mudah dipahami, dan langsung bisa diaplikasikan.</p>
+              <p class="description-text">Berawal dari passion berbagi ilmu, RKMAULIDA kini telah membantu ratusan orang meningkatkan skill desain, pemasaran, dan produktivitas melalui produk digital.</p>
+              
               <div class="stats-grid">
-                <div class="stat-item">
-                  <div class="stat-number">500+</div>
-                  <div class="stat-label">E-Book Terjual</div>
-                </div>
-                <div class="stat-item">
-                  <div class="stat-number">100%</div>
-                  <div class="stat-label">Jaminan Kualitas</div>
-                </div>
-                <div class="stat-item">
-                  <div class="stat-number">24/7</div>
-                  <div class="stat-label">Akses Materi</div>
-                </div>
-                <div class="stat-item">
-                  <div class="stat-number">5+</div>
-                  <div class="stat-label">Tahun Pengalaman</div>
-                </div>
+                <div class="stat-item"><div class="stat-number">10+</div><div class="stat-label">Produk</div></div>
+                <div class="stat-item"><div class="stat-number">1k+</div><div class="stat-label">Pengikut</div></div>
+                <div class="stat-item"><div class="stat-number">100%</div><div class="stat-label">Garansi</div></div>
               </div>
             </div>
           </div>
-
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
             <div class="visual-section">
               <div class="main-image-container">
-                <img src="assets/img/about/about-8.webp" alt="Kreator Konten" class="img-fluid main-visual">
-                <div class="overlay-card">
-                  <div class="card-content">
-                    <h4>Materi Premium</h4>
-                    <p>Dibuat dengan riset mendalam dan praktik terbaik industri.</p>
-                    <div class="card-icon">
-                      <i class="bi bi-star-fill"></i>
-                    </div>
-                  </div>
-                </div>
+                <img src="assets/img/about/about-8.webp" alt="Tentang Kami" class="img-fluid main-visual">
               </div>
             </div>
           </div>
-
         </div>
-
       </div>
+    </section>
 
-    </section><section id="features" class="features section">
-
+    <section id="features" class="features section">
       <div class="container section-title" data-aos="fade-up">
         <span class="description-title">Keunggulan</span>
-        <h2>Mengapa Membeli Di Sini?</h2>
-        <p>Kami memastikan pengalaman belajar dan penggunaan produk digital yang nyaman bagi Anda</p>
-      </div><div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="tabs-wrapper">
-          <ul class="nav nav-tabs" data-aos="fade-up" data-aos-delay="100">
-
-            <li class="nav-item">
-              <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
-                <div class="tab-icon">
-                  <i class="bi bi-lightning-charge"></i>
-                </div>
-                <div class="tab-content">
-                  <h5>Akses Instan</h5>
-                  <span>Langsung Download</span>
-                </div>
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
-                <div class="tab-icon">
-                  <i class="bi bi-phone"></i>
-                </div>
-                <div class="tab-content">
-                  <h5>Fleksibel</h5>
-                  <span>Akses Dimana Saja</span>
-                </div>
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
-                <div class="tab-icon">
-                  <i class="bi bi-arrow-repeat"></i>
-                </div>
-                <div class="tab-content">
-                  <h5>Update Gratis</h5>
-                  <span>Seumur Hidup</span>
-                </div>
-              </a>
-            </li>
-
-          </ul>
-
-          <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="tab-pane fade active show" id="features-tab-1">
-              <div class="row align-items-center">
-                <div class="col-lg-5">
-                  <div class="content-wrapper">
-                    <div class="icon-badge">
-                      <i class="bi bi-lightning-charge"></i>
-                    </div>
-                    <h3>Akses Materi Secara Instan</h3>
-                    <p>Tidak perlu menunggu pengiriman fisik. Begitu pembayaran terkonfirmasi, materi pembelajaran atau template langsung masuk ke email dan dashboard Anda.</p>
-                    <div class="feature-grid">
-                      <div class="feature-item"><i class="bi bi-check-circle-fill"></i> Link download otomatis</div>
-                      <div class="feature-item"><i class="bi bi-check-circle-fill"></i> Tersedia 24 jam non-stop</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-7">
-                  <div class="visual-content">
-                    <div class="main-image">
-                      <img src="assets/img/features/features-4.webp" alt="Akses Cepat" class="img-fluid">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div><div class="tab-pane fade" id="features-tab-2">
-              <div class="row align-items-center">
-                <div class="col-lg-5">
-                  <div class="content-wrapper">
-                    <div class="icon-badge">
-                      <i class="bi bi-phone"></i>
-                    </div>
-                    <h3>Belajar Kapan Saja, Dimana Saja</h3>
-                    <p>Materi kami didesain responsif. Anda bisa membaca E-book atau menonton video course lewat HP, Tablet, maupun Laptop.</p>
-                    <div class="feature-grid">
-                      <div class="feature-item"><i class="bi bi-check-circle-fill"></i> Support Android & iOS</div>
-                      <div class="feature-item"><i class="bi bi-check-circle-fill"></i> Kualitas Video HD</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-7">
-                   <div class="visual-content">
-                    <div class="main-image">
-                      <img src="assets/img/features/features-2.webp" alt="Mobile Friendly" class="img-fluid">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div><div class="tab-pane fade" id="features-tab-3">
-              <div class="row align-items-center">
-                <div class="col-lg-5">
-                  <div class="content-wrapper">
-                    <div class="icon-badge">
-                      <i class="bi bi-arrow-repeat"></i>
-                    </div>
-                    <h3>Gratis Update Materi</h3>
-                    <p>Dunia digital cepat berubah. Beli sekali, dan Anda akan mendapatkan revisi atau tambahan materi di masa depan tanpa biaya tambahan.</p>
-                    <div class="feature-grid">
-                      <div class="feature-item"><i class="bi bi-check-circle-fill"></i> Notifikasi via Email</div>
-                      <div class="feature-item"><i class="bi bi-check-circle-fill"></i> Versi file terbaru</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-7">
-                   <div class="visual-content">
-                    <div class="main-image">
-                      <img src="assets/img/features/features-6.webp" alt="Update Gratis" class="img-fluid">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div></div>
-        </div>
-      </div>
-    </section><section id="services" class="services section">
-
-      <div class="container section-title" data-aos="fade-up">
-        <span class="description-title">Kategori</span>
-        <h2>Kategori Produk Digital</h2>
-        <p>Pilih kategori produk yang sesuai dengan kebutuhan pengembangan diri Anda</p>
-      </div><div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <div class="intro-content" data-aos="fade-right" data-aos-delay="100">
-              <div class="section-badge mb-3" data-aos="zoom-in" data-aos-delay="50">
-                <i class="bi bi-star-fill"></i>
-                <span>KOLEKSI LENGKAP</span>
-              </div>
-              <h2 class="section-heading mb-4">Solusi Digital untuk Kreator Modern</h2>
-              <p class="section-description mb-4">Kami menyediakan berbagai aset mulai dari bahan bacaan, video pembelajaran, hingga template siap pakai yang akan menghemat waktu kerja Anda hingga 80%.</p>
-              <a href="#pricing" class="cta-button" data-aos="fade-right" data-aos-delay="200">
-                Lihat Semua Produk
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="hero-visual" data-aos="fade-left" data-aos-delay="150">
-              <img src="assets/img/services/services-1.webp" alt="Kategori" class="img-fluid">
-            </div>
-          </div>
-        </div>
-
-        <div class="services-grid mt-5">
-          <div class="row g-4">
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-              <div class="service-card">
-                <div class="card-number"><span>01</span></div>
-                <div class="card-content">
-                  <h5 class="service-title"><a href="#">E-Book Premium</a></h5>
-                  <p class="service-description">Buku elektronik format PDF dengan pembahasan mendalam seputar coding, desain, dan marketing.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-              <div class="service-card">
-                <div class="card-number"><span>02</span></div>
-                <div class="card-content">
-                  <h5 class="service-title"><a href="#">Video Course</a></h5>
-                  <p class="service-description">Tutorial langkah demi langkah berbasis video berkualitas HD yang bisa Anda tonton berulang kali.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-              <div class="service-card">
-                <div class="card-number"><span>03</span></div>
-                <div class="card-content">
-                  <h5 class="service-title"><a href="#">Template Notion</a></h5>
-                  <p class="service-description">Template manajemen tugas, keuangan, dan produktivitas yang siap diduplikasi ke workspace Anda.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-              <div class="service-card">
-                <div class="card-number"><span>04</span></div>
-                <div class="card-content">
-                  <h5 class="service-title"><a href="#">Preset Lightroom</a></h5>
-                  <p class="service-description">Filter foto estetik untuk mempercantik feed Instagram Anda hanya dengan satu klik.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-              <div class="service-card">
-                <div class="card-number"><span>05</span></div>
-                <div class="card-content">
-                  <h5 class="service-title"><a href="#">Webinar Eksklusif</a></h5>
-                  <p class="service-description">Tiket akses ke sesi live sharing dan tanya jawab langsung dengan para ahli industri.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-              <div class="service-card">
-                <div class="card-number"><span>06</span></div>
-                <div class="card-content">
-                  <h5 class="service-title"><a href="#">Jasa Konsultasi</a></h5>
-                  <p class="service-description">Sesi mentoring 1-on-1 via Zoom untuk bedah portofolio atau review codingan Anda.</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
+        <h2>Mengapa Memilih Kami?</h2>
+        <p>Kualitas dan kepuasan Anda adalah prioritas nomor satu kami</p>
       </div>
 
-    </section><section id="pricing" class="pricing section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-4">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="feature-card">
+              <div class="icon-box"><i class="bi bi-lightning-charge"></i></div>
+              <h3>Akses Instan</h3>
+              <p>Produk langsung terkirim ke email Anda detik itu juga setelah pembayaran berhasil dikonfirmasi.</p>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-card">
+              <div class="icon-box"><i class="bi bi-phone"></i></div>
+              <h3>Mobile Friendly</h3>
+              <p>Materi E-book dan Video didesain agar nyaman diakses melalui Smartphone maupun Laptop.</p>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="feature-card">
+              <div class="icon-box"><i class="bi bi-life-preserver"></i></div>
+              <h3>Lifetime Support</h3>
+              <p>Bingung materi? Tim support kami siap membantu menjawab pertanyaan Anda via WhatsApp.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section id="products" class="pricing section">
       <div class="container section-title" data-aos="fade-up">
         <span class="description-title">Katalog</span>
         <h2>Produk Terlaris</h2>
-        <p>Investasikan sedikit uang untuk hasil yang besar bagi karir Anda</p>
-      </div><div class="container" data-aos="fade-up" data-aos-delay="100">
+        <p>Investasi leher ke atas terbaik dengan harga terjangkau</p>
+      </div>
 
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4">
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
             <article class="price-card h-100">
+              <div class="product-img">
+                <img src="assets/img/blog/blog-1.jpg" alt="Foto Ebook">
+              </div>
               <div class="card-head">
                 <span class="badge-title">E-BOOK</span>
-                <h3 class="title">Panduan Karir Digital</h3>
-                <p class="subtitle">Buku panduan lengkap untuk memulai karir sebagai freelancer dari nol.</p>
-                <div class="price-wrap">
-                  <span class="price"><sup>Rp</sup>49rb</span>
-                </div>
+                <h3 class="title">Panduan Bisnis Online</h3>
+                <p class="subtitle">Kitab lengkap memulai bisnis dari nol hingga profit.</p>
+                <div class="price-wrap"><span class="price"><sup>Rp</sup>49.000</span></div>
               </div>
-
               <ul class="feature-list list-unstyled mb-4">
-                <li><i class="bi bi-check-circle"></i> Format PDF (150 Halaman)</li>
-                <li><i class="bi bi-check-circle"></i> Checklist Freelancer</li>
-                <li><i class="bi bi-check-circle"></i> Template Invoice</li>
-                <li><i class="bi bi-check-circle"></i> Akses Seumur Hidup</li>
+                <li><i class="bi bi-check-circle"></i> 100+ Halaman PDF</li>
+                <li><i class="bi bi-check-circle"></i> Studi Kasus Nyata</li>
+                <li><i class="bi bi-check-circle"></i> Bonus Template Excel</li>
               </ul>
-
-              <div class="cta">
-                <a href="#" class="btn btn-choose w-100">Beli Sekarang</a>
-              </div>
+              <div class="cta"><a href="#" class="btn btn-choose w-100">Beli Sekarang</a></div>
             </article>
           </div>
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="250">
             <article class="price-card featured h-100 position-relative">
-              <div class="ribbon"><i class="bi bi-star-fill"></i> Best Seller</div>
-
+              <div class="ribbon"><i class="bi bi-star-fill"></i> Populer</div>
+              <div class="product-img">
+                <img src="assets/img/blog/blog-2.jpg" alt="Foto Course">
+              </div>
               <div class="card-head">
                 <span class="badge-title">COURSE</span>
-                <h3 class="title">Mastering Web Design</h3>
-                <p class="subtitle">Belajar membuat website landing page yang menjual menggunakan HTML & CSS.</p>
-                <div class="price-wrap">
-                  <span class="price"><sup>Rp</sup>199rb</span>
-                </div>
+                <h3 class="title">Mastering Canva Design</h3>
+                <p class="subtitle">Video panduan desain grafis untuk non-desainer.</p>
+                <div class="price-wrap"><span class="price"><sup>Rp</sup>99.000</span></div>
               </div>
-
               <ul class="feature-list list-unstyled mb-4">
-                <li><i class="bi bi-check-circle"></i> 20+ Video Materi HD</li>
-                <li><i class="bi bi-check-circle"></i> Source Code Project</li>
-                <li><i class="bi bi-check-circle"></i> Grup Support Telegram</li>
-                <li><i class="bi bi-check-circle"></i> Sertifikat Penyelesaian</li>
-                <li><i class="bi bi-check-circle"></i> Studi Kasus Real</li>
+                <li><i class="bi bi-check-circle"></i> 20 Video HD</li>
+                <li><i class="bi bi-check-circle"></i> Akses Selamanya</li>
+                <li><i class="bi bi-check-circle"></i> Grup Diskusi</li>
+                <li><i class="bi bi-check-circle"></i> Sertifikat</li>
               </ul>
-
-              <div class="cta">
-                <a href="#" class="btn btn-choose w-100">Daftar Kelas</a>
-              </div>
+              <div class="cta"><a href="#" class="btn btn-choose w-100">Daftar Kelas</a></div>
             </article>
           </div>
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
             <article class="price-card h-100">
+              <div class="product-img">
+                <img src="assets/img/blog/blog-3.jpg" alt="Foto Preset">
+              </div>
               <div class="card-head">
-                <span class="badge-title">BUNDLE</span>
-                <h3 class="title">All-in-One Creator Kit</h3>
-                <p class="subtitle">Paket lengkap berisi semua E-book, Course, dan Template yang saya miliki.</p>
-                <div class="price-wrap">
-                  <span class="price"><sup>Rp</sup>499rb</span>
-                </div>
+                <span class="badge-title">PRESET</span>
+                <h3 class="title">50+ Selebgram Preset</h3>
+                <p class="subtitle">Ubah foto biasa jadi estetik dalam satu klik.</p>
+                <div class="price-wrap"><span class="price"><sup>Rp</sup>29.000</span></div>
               </div>
-
               <ul class="feature-list list-unstyled mb-4">
-                <li><i class="bi bi-check-circle"></i> Semua E-Book (5 Judul)</li>
-                <li><i class="bi bi-check-circle"></i> Semua Course Video</li>
-                <li><i class="bi bi-check-circle"></i> 100+ Template Notion</li>
-                <li><i class="bi bi-check-circle"></i> Mentoring 1 Jam (Bonus)</li>
-                <li><i class="bi bi-check-circle"></i> Hemat 60%</li>
+                <li><i class="bi bi-check-circle"></i> Format DNG & XMP</li>
+                <li><i class="bi bi-check-circle"></i> Support iOS & Android</li>
+                <li><i class="bi bi-check-circle"></i> Video Cara Pakai</li>
               </ul>
-
-              <div class="cta">
-                <a href="#" class="btn btn-choose w-100">Ambil Promo</a>
-              </div>
+              <div class="cta"><a href="#" class="btn btn-choose w-100">Download</a></div>
             </article>
           </div>
 
         </div>
-
       </div>
+    </section>
 
-    </section><section id="faq" class="faq section">
-
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
-            <div class="faq-container">
-
-              <div class="faq-item faq-active">
-                <h3>Bagaimana cara mengakses produk setelah membeli?</h3>
-                <div class="faq-content">
-                  <p>Setelah pembayaran berhasil diverifikasi, link download atau akses ke materi akan dikirimkan otomatis ke alamat email yang Anda daftarkan.</p>
+    <section id="bundling" class="section">
+      <div class="container" data-aos="zoom-in">
+        <div class="bundling-section">
+          <div class="row align-items-center">
+            <div class="col-lg-5 text-center">
+               <img src="assets/img/portfolio/app-1.jpg" class="img-fluid rounded shadow-lg mb-4 mb-lg-0" alt="Paket Bundling">
+            </div>
+            <div class="col-lg-7">
+              <span class="badge bg-warning text-dark mb-2">LIMITED OFFER</span>
+              <h2 class="text-white fw-bold">🔥 PAKET SULTAN (All in One)</h2>
+              <p class="lead text-white-50">Dapatkan SEMUA produk di atas (E-book + Course + Preset) dengan harga gila-gilaan!</p>
+              <ul class="list-unstyled text-white mb-4">
+                <li><i class="bi bi-check-circle-fill text-warning me-2"></i> E-Book Panduan Bisnis</li>
+                <li><i class="bi bi-check-circle-fill text-warning me-2"></i> Kelas Online Canva</li>
+                <li><i class="bi bi-check-circle-fill text-warning me-2"></i> 50+ Preset Lightroom</li>
+                <li><i class="bi bi-check-circle-fill text-warning me-2"></i> <strong>BONUS:</strong> Konsultasi 30 Menit</li>
+              </ul>
+              <div class="d-flex align-items-center gap-4 mb-4">
+                <div>
+                  <div class="old-price">Rp 500.000</div>
+                  <div class="bundling-price">Rp 149.000</div>
                 </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
+                <a href="#" class="btn btn-light btn-lg rounded-pill px-5 fw-bold text-primary shadow">AMBIL PROMO</a>
               </div>
-
-              <div class="faq-item">
-                <h3>Metode pembayaran apa yang tersedia?</h3>
-                <div class="faq-content">
-                  <p>Kami menerima pembayaran melalui Transfer Bank (BCA, Mandiri), E-Wallet (GoPay, OVO, Dana), dan QRIS.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>
-
-              <div class="faq-item">
-                <h3>Apakah materi bisa diakses selamanya?</h3>
-                <div class="faq-content">
-                  <p>Ya! Sekali bayar, Anda mendapatkan akses seumur hidup (Lifetime Access) termasuk jika ada update materi di masa depan.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>
-
-              <div class="faq-item">
-                <h3>Apakah ada grup komunitas untuk bertanya?</h3>
-                <div class="faq-content">
-                  <p>Khusus untuk pembelian Video Course dan Bundle, kami menyediakan grup Telegram eksklusif untuk diskusi dan tanya jawab.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>
-
+              <p class="small text-white-50 fst-italic">*Promo berakhir segera</p>
             </div>
           </div>
         </div>
       </div>
+    </section>
 
-    </section><section id="contact" class="contact section light-background">
+    <section id="faq" class="faq section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+            <div class="faq-container">
+              <div class="faq-item faq-active">
+                <h3>Bagaimana cara akses produknya?</h3>
+                <div class="faq-content"><p>Link download akan dikirim otomatis ke email Anda setelah pembayaran terkonfirmasi.</p></div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+              <div class="faq-item">
+                <h3>Metode pembayaran apa saja?</h3>
+                <div class="faq-content"><p>Kami menerima Transfer Bank (BCA, Mandiri), E-Wallet (GoPay, Dana, OVO), dan QRIS.</p></div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+              <div class="faq-item">
+                <h3>Apakah ada garansi uang kembali?</h3>
+                <div class="faq-content"><p>Ya, jika file korup atau tidak sesuai deskripsi, kami kembalikan uang Anda 100%.</p></div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials section light-background">
       <div class="container section-title" data-aos="fade-up">
-        <span class="description-title">Kontak</span>
-        <h2>Butuh Bantuan?</h2>
-        <p>Jika ada kendala saat pembelian atau download, hubungi kami segera.</p>
+        <span class="description-title">Testimoni</span>
+        <h2>Kata Mereka</h2>
+        <p>Ribuan orang telah merasakan manfaat produk RKMAULIDA</p>
       </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row g-5">
-          <div class="col-lg-6">
-            <div class="content" data-aos="fade-up" data-aos-delay="200">
-              <h2 class="display-5 mb-4">Hubungi Support</h2>
-              <p class="lead mb-4">Kami siap membantu Anda setiap hari kerja (Senin - Jumat, 09.00 - 17.00 WIB).</p>
-
-              <div class="contact-info mt-5">
-                <div class="info-item d-flex mb-3">
-                  <i class="bi bi-envelope-at me-3"></i>
-                  <span>support@rifzyi.digital</span>
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": { "delay": 3000, "disableOnInteraction": false },
+              "slidesPerView": "auto",
+              "pagination": { "el": ".swiper-pagination", "type": "bullets", "clickable": true },
+              "breakpoints": {
+                "320": { "slidesPerView": 1, "spaceBetween": 40 },
+                "1200": { "slidesPerView": 3, "spaceBetween": 20 }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                <p>"Isi E-booknya daging semua! Bahasanya mudah dimengerti pemula."</p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                  <h3>Sari Rahma</h3>
+                  <h4>Reseller</h4>
                 </div>
-                <div class="info-item d-flex mb-3">
-                  <i class="bi bi-whatsapp me-3"></i>
-                  <span>+62 812 3456 7890</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                <p>"Presetnya keren banget, foto liburan jadi makin estetik. Worth it!"</p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                  <h3>Budi Santoso</h3>
+                  <h4>Fotografer</h4>
                 </div>
-                <div class="info-item d-flex mb-4">
-                  <i class="bi bi-geo-alt me-3"></i>
-                  <span>Jakarta, Indonesia</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                <p>"Beli paket bundlingnya hemat banget. Admin juga ramah pas tanya-tanya."</p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                  <h3>Putri Amelia</h3>
+                  <h4>Mahasiswi</h4>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                <p>"Course Canvanya ngebantu banget buat bikin tugas kuliah. Makasih Kak!"</p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                  <h3>Rian Pratama</h3>
+                  <h4>Freelancer</h4>
                 </div>
               </div>
             </div>
           </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
 
+    <section id="contact" class="contact section">
+      <div class="container section-title" data-aos="fade-up">
+        <span class="description-title">Kontak</span>
+        <h2>Hubungi Kami</h2>
+        <p>Ada pertanyaan? Jangan ragu untuk menghubungi kami</p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-5">
           <div class="col-lg-6">
-            <div class="contact-form card" data-aos="fade-up" data-aos-delay="300">
-              <div class="card-body p-4 p-lg-5">
-                <form action="forms/contact.php" method="post" class="php-email-form">
-                  <div class="row gy-4">
-                    <div class="col-12">
-                      <input type="text" name="name" class="form-control" placeholder="Nama Anda" required="">
-                    </div>
-                    <div class="col-12 ">
-                      <input type="email" class="form-control" name="email" placeholder="Email Pembelian (jika ada)" required="">
-                    </div>
-                    <div class="col-12">
-                      <input type="text" class="form-control" name="subject" placeholder="Kendala/Pertanyaan" required="">
-                    </div>
-                    <div class="col-12">
-                      <textarea class="form-control" name="message" rows="6" placeholder="Jelaskan masalah Anda..." required=""></textarea>
-                    </div>
-                    <div class="col-12 text-center">
-                      <button type="submit" class="btn btn-submit w-100">Kirim Pesan</button>
-                    </div>
-                  </div>
-                </form>
+            <div class="content">
+              <h3>RKMAULIDA Store</h3>
+              <p>Solusi kebutuhan digital Anda.</p>
+              <div class="contact-info mt-3">
+                <div class="info-item d-flex mb-3"><i class="bi bi-envelope-at me-3"></i><span>admin@rkmaulida.com</span></div>
+                <div class="info-item d-flex mb-3"><i class="bi bi-whatsapp me-3"></i><span>+62 812 3456 7890</span></div>
+                <div class="info-item d-flex mb-3"><i class="bi bi-instagram me-3"></i><span>@rkmaulida_store</span></div>
               </div>
             </div>
+          </div>
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" class="php-email-form">
+              <div class="row gy-4">
+                <div class="col-12"><input type="text" name="name" class="form-control" placeholder="Nama Anda" required></div>
+                <div class="col-12"><input type="email" name="email" class="form-control" placeholder="Email Anda" required></div>
+                <div class="col-12"><textarea class="form-control" name="message" rows="5" placeholder="Pesan Anda" required></textarea></div>
+                <div class="col-12 text-center"><button type="submit" class="btn btn-primary w-100">Kirim Pesan</button></div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -592,51 +484,44 @@
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Rifzyi.Digital</span>
+            <span class="sitename">RKMAULIDA</span>
           </a>
-          <p>Platform belajar digital untuk meningkatkan skill teknis dan kreatif Anda. Belajar praktis, harga terjangkau.</p>
+          <p>Membantu Anda berkembang di era digital dengan produk berkualitas tinggi dan harga terjangkau.</p>
           <div class="social-links d-flex mt-4">
-            <a href="#"><i class="bi bi-twitter-x"></i></a>
-            <a href="#"><i class="bi bi-facebook"></i></a>
-            <a href="#"><i class="bi bi-instagram"></i></a>
-            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
           </div>
         </div>
-
         <div class="col-lg-2 col-6 footer-links">
-          <h4>Menu</h4>
+          <h4>Menu Cepat</h4>
           <ul>
-            <li><a href="#">Beranda</a></li>
-            <li><a href="#">Katalog Produk</a></li>
-            <li><a href="#">Testimoni</a></li>
-            <li><a href="#">Login Member</a></li>
+            <li><a href="#hero">Beranda</a></li>
+            <li><a href="#products">Produk</a></li>
+            <li><a href="#bundling">Promo</a></li>
+            <li><a href="#faq">Bantuan</a></li>
           </ul>
         </div>
-
         <div class="col-lg-2 col-6 footer-links">
           <h4>Kategori</h4>
           <ul>
             <li><a href="#">E-Book</a></li>
-            <li><a href="#">Video Course</a></li>
+            <li><a href="#">Course</a></li>
             <li><a href="#">Template</a></li>
-            <li><a href="#">Mentoring</a></li>
+            <li><a href="#">Preset</a></li>
           </ul>
         </div>
-
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-          <h4>Kontak</h4>
+          <h4>Alamat</h4>
           <p>Jakarta, Indonesia</p>
-          <p class="mt-4"><strong>WA:</strong> <span>+62 812 3456 7890</span></p>
-          <p><strong>Email:</strong> <span>support@rifzyi.digital</span></p>
+          <p class="mt-4"><strong>WA:</strong> +62 812 3456 7890</p>
+          <p><strong>Email:</strong> admin@rkmaulida.com</p>
         </div>
       </div>
     </div>
-
     <div class="container copyright text-center mt-4">
-      <p>© <span>Hak Cipta</span> <strong class="px-1 sitename">Rifzyi Digital</strong> <span>Semua Hak Dilindungi</span></p>
-      <div class="credits">
-        Didesain oleh <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
+      <p>© <span>Hak Cipta</span> <strong class="px-1 sitename">RKMAULIDA</strong> <span>Semua Hak Dilindungi</span></p>
+      <div class="credits">Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a></div>
     </div>
   </footer>
 
@@ -652,5 +537,4 @@
   <script src="assets/js/main.js"></script>
 
 </body>
-
 </html>
