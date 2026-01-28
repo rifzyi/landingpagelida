@@ -876,6 +876,9 @@ section,
   height: 100%;
   border-radius: 12px;
   overflow: hidden;
+
+  width: 100%;
+  max-width: 700px;
 }
 
 .hero .hero-visual .hero-image-wrapper .hero-image {
