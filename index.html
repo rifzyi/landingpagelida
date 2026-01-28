@@ -41,23 +41,21 @@
       line-height: 1;
     }
 
-    /* Tulisan lynk.id (Kecil di atas) */
+    /* Tulisan lynk.id (Kecil di atas) - HITAM */
     .logo-prefix {
       font-size: 0.9rem;
       font-weight: 500;
-      /* UBAH: Hitam/Gelap (Standard) agar terbaca di background terang */
       color: #334155; 
       letter-spacing: 0.5px;
       margin-bottom: 2px;
     }
 
-    /* Tulisan RKMAULIDA (Besar di bawah) */
+    /* Tulisan RKMAULIDA (Besar di bawah) - HIJAU TOSCA */
     .logo-main {
       font-size: 1.8rem;
       font-weight: 800;
       text-transform: uppercase;
       letter-spacing: -0.5px;
-      /* UBAH: KEMBALI KE HIJAU TOSCA */
       color: #00a99d;
       background: none; 
       -webkit-text-fill-color: #00a99d;
@@ -66,7 +64,6 @@
     /* --- HERO SECTION --- */
     .hero {
       padding: 140px 0 80px 0;
-      /* Background tint hijau muda */
       background: #f0fdfa; 
       position: relative;
       overflow: hidden;
@@ -80,7 +77,6 @@
       right: -5%;
       width: 500px;
       height: 500px;
-      /* Aura Hijau */
       background: radial-gradient(circle, rgba(0, 169, 157, 0.1) 0%, rgba(255,255,255,0) 70%);
       border-radius: 50%;
       z-index: 0;
@@ -107,7 +103,6 @@
 
     /* --- BUTTONS (HIJAU) --- */
     .btn-primary-modern {
-      /* Hijau */
       background: #00a99d;
       color: white;
       padding: 12px 35px;
@@ -129,7 +124,6 @@
 
     .btn-secondary-modern {
       background: white;
-      /* Text Hijau */
       color: #00a99d;
       padding: 12px 35px;
       border-radius: 50px;
@@ -198,7 +192,6 @@
     }
     .stat-number-hero {
       font-size: 2rem; font-weight: 800;
-      /* Hijau */
       color: #00a99d;
       display: block; line-height: 1; margin-bottom: 5px;
     }
@@ -289,15 +282,18 @@
     .stat-label { font-size: 0.8rem; color: #666; white-space: nowrap; }
     @media (max-width: 576px) { .stat-number { font-size: 1.1rem; } .stat-label { font-size: 0.7rem; } }
 
-    /* --- JUDUL HALAMAN (SECTION TITLE) JADI ABU-ABU --- */
+    /* --- JUDUL HALAMAN (SECTION TITLE) JADI SAMAR-SAMAR --- */
     .section-badge, 
     .description-title {
-        color: #94a3b8 !important; /* UBAH: Abu-abu (seperti permintaan) */
-        font-weight: 700;
+        /* UBAH: Warna dibuat transparan/samar (Opacity rendah) */
+        color: rgba(148, 163, 184, 0.4) !important; 
+        font-weight: 800;
         text-transform: uppercase;
-        letter-spacing: 1px;
+        letter-spacing: 2px;
         display: block;
         margin-bottom: 10px;
+        /* Opsional: Jika ingin efek seperti 'terukir' di background */
+        font-size: 1rem;
     }
 
     /* --- TAB SECTION (FITUR) --- */
