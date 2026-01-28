@@ -24,13 +24,13 @@
   <link href="assets/css/main.css" rel="stylesheet">
 
   <style>
-    /* --- GLOBAL STYLE UPDATE --- */
+    /* --- GLOBAL STYLE UPDATE (HIJAU TOSCA THEME) --- */
     body {
-      font-family: 'Plus Jakarta Sans', sans-serif; /* Font modern bersih */
+      font-family: 'Plus Jakarta Sans', sans-serif;
       color: #444;
     }
     h1, h2, h3, h4, h5, h6 {
-      font-family: 'Rubik', sans-serif; /* Font heading tebal */
+      font-family: 'Rubik', sans-serif;
     }
 
     /* --- NAVBAR LOGO STYLING --- */
@@ -39,20 +39,19 @@
       font-weight: 800;
       letter-spacing: -0.5px;
       text-transform: uppercase;
-      /* Efek Gradasi pada Teks */
-      background: linear-gradient(135deg, #0d6efd, #0dcaf0); 
+      /* UBAH: Gradient Hijau Tosca */
+      background: linear-gradient(135deg, #00a99d, #34d399); 
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       /* Fallback warna */
-      color: #0d6efd;
+      color: #00a99d;
     }
 
-    /* =========================================
-       HERO SECTION BARU (GAYA LYNK.ID)
-       ========================================= */
+    /* --- HERO SECTION --- */
     .hero {
       padding: 140px 0 80px 0;
-      background: #f8faff; /* Background putih kebiruan */
+      /* UBAH: Background tint hijau muda */
+      background: #f0fdfa; 
       position: relative;
       overflow: hidden;
     }
@@ -65,16 +64,14 @@
       right: -5%;
       width: 500px;
       height: 500px;
-      background: radial-gradient(circle, rgba(37, 99, 235, 0.1) 0%, rgba(255,255,255,0) 70%);
+      /* UBAH: Aura Hijau */
+      background: radial-gradient(circle, rgba(0, 169, 157, 0.1) 0%, rgba(255,255,255,0) 70%);
       border-radius: 50%;
       z-index: 0;
       pointer-events: none;
     }
 
-    .hero-content {
-      position: relative;
-      z-index: 2;
-    }
+    .hero-content { position: relative; z-index: 2; }
 
     .hero-title {
       font-size: 3.5rem;
@@ -92,14 +89,15 @@
       line-height: 1.6;
     }
 
-    /* Tombol Hero Modern */
+    /* --- BUTTONS (HIJAU) --- */
     .btn-primary-modern {
-      background: #0d6efd;
+      /* UBAH: Hijau */
+      background: #00a99d;
       color: white;
       padding: 12px 35px;
       border-radius: 50px;
       font-weight: 600;
-      box-shadow: 0 10px 20px rgba(13, 110, 253, 0.2);
+      box-shadow: 0 10px 20px rgba(0, 169, 157, 0.2);
       transition: all 0.3s ease;
       text-decoration: none;
       display: inline-flex;
@@ -107,15 +105,16 @@
       border: none;
     }
     .btn-primary-modern:hover {
-      background: #0b5ed7;
+      background: #008f85;
       transform: translateY(-3px);
-      box-shadow: 0 15px 25px rgba(13, 110, 253, 0.3);
+      box-shadow: 0 15px 25px rgba(0, 169, 157, 0.3);
       color: white;
     }
 
     .btn-secondary-modern {
       background: white;
-      color: #0d6efd;
+      /* UBAH: Text Hijau */
+      color: #00a99d;
       padding: 12px 35px;
       border-radius: 50px;
       font-weight: 600;
@@ -127,153 +126,125 @@
       align-items: center;
     }
     .btn-secondary-modern:hover {
-      background: #f1f5f9;
-      color: #0b5ed7;
+      background: #f0fdfa;
+      color: #008f85;
       border-color: #cbd5e1;
     }
 
     /* VISUAL 3D & GLASSMORPHISM */
     .hero-visual {
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 2;
-      margin-top: 20px;
+      position: relative; display: flex; justify-content: center;
+      align-items: center; z-index: 2; margin-top: 20px;
     }
-
-    .hero-image-wrapper {
-      position: relative;
-      width: 100%;
-      max-width: 480px;
-    }
-
-    /* Gambar 3D Utama */
-    .hero-image {
+    .hero-image-wrapper { position: relative; width: 100%; max-width: 480px; }
+    .hero-img-main {
       width: 100%;
       filter: drop-shadow(0 20px 40px rgba(0,0,0,0.1));
       animation: float-main 6s ease-in-out infinite;
     }
 
-    /* Floating Cards dengan Efek Kaca */
+    /* Floating Cards */
     .floating-card {
       position: absolute;
-      background: rgba(255, 255, 255, 0.75); /* Transparan */
-      backdrop-filter: blur(12px); /* Blur */
-      -webkit-backdrop-filter: blur(12px);
+      background: rgba(255, 255, 255, 0.75);
+      backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
       border: 1px solid rgba(255, 255, 255, 0.8);
-      border-radius: 16px;
-      padding: 12px 18px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-      z-index: 3;
+      border-radius: 16px; padding: 12px 18px;
+      display: flex; align-items: center; gap: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); z-index: 3;
     }
 
     .card-icon {
-      width: 40px;
-      height: 40px;
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.2rem;
-      color: white;
+      width: 40px; height: 40px; border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem; color: white;
     }
-    
     .card-info h5 { font-size: 0.9rem; font-weight: 700; margin: 0; color: #334155; }
     .card-info p { font-size: 0.75rem; margin: 0; color: #64748b; }
 
-    /* Posisi Kartu */
+    /* UBAH: Icon Colors jadi nuansa Hijau/Emas */
     .card-1 { top: 25%; left: -20px; animation: float-card 5s ease-in-out infinite 0s; }
-    .icon-1 { background: linear-gradient(135deg, #f59e0b, #d97706); }
+    .icon-1 { background: linear-gradient(135deg, #f59e0b, #d97706); } /* Tetap Orange agar kontras */
 
     .card-2 { bottom: 15%; right: -10px; animation: float-card 5s ease-in-out infinite 1.5s; }
-    .icon-2 { background: linear-gradient(135deg, #0d6efd, #0a58ca); }
+    .icon-2 { background: linear-gradient(135deg, #00a99d, #34d399); } /* Jadi Hijau */
 
     .card-3 { top: 10%; right: 30px; animation: float-card 6s ease-in-out infinite 0.5s; padding: 8px 12px; }
-    .icon-3 { background: linear-gradient(135deg, #198754, #157347); width: 30px; height: 30px; font-size: 0.9rem; }
+    .icon-3 { background: linear-gradient(135deg, #ccfbf1, #99f6e4); color: #00a99d; width: 30px; height: 30px; font-size: 0.9rem; } /* Hijau Muda */
 
     @keyframes float-main { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
     @keyframes float-card { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
 
-    /* Hero Stats (Versi Baru) */
+    /* Hero Stats */
     .hero-stats {
-       display: flex;
-       gap: 40px; 
-       margin-top: 50px;
-       border-top: 1px solid #e2e8f0;
-       padding-top: 30px;
-    }
-    .stat-item-hero {
-      text-align: left;
+       display: flex; gap: 40px; margin-top: 50px;
+       border-top: 1px solid #e2e8f0; padding-top: 30px;
     }
     .stat-number-hero {
-      font-size: 2rem;
-      font-weight: 800;
-      color: #0ea2bd;
-      display: block;
-      line-height: 1;
-      margin-bottom: 5px;
+      font-size: 2rem; font-weight: 800;
+      /* UBAH: Hijau */
+      color: #00a99d;
+      display: block; line-height: 1; margin-bottom: 5px;
     }
-    .stat-label-hero {
-      font-size: 0.9rem;
-      color: #64748b;
-      font-weight: 500;
-    }
+    .stat-label-hero { font-size: 0.9rem; color: #64748b; font-weight: 500; }
 
-    /* --- RESPONSIVE HERO --- */
     @media (max-width: 991px) {
       .hero { text-align: center; padding-top: 100px; }
       .hero-title { font-size: 2.5rem; }
       .hero-stats { justify-content: center; gap: 20px; }
       .hero-visual { margin-top: 60px; }
       .hero-image-wrapper { max-width: 80%; margin: 0 auto; }
-      .card-1 { left: 0; }
-      .card-2 { right: 0; }
+      .card-1 { left: 0; } .card-2 { right: 0; }
     }
 
-    /* =========================================
-       PRODUCT CARDS & RIBBON FIX
-       ========================================= */
+    /* --- PRODUCT CARDS --- */
     .product-img {
-      overflow: hidden;
-      border-radius: 10px;
-      margin-bottom: 20px;
-      height: 220px;
-      background-color: #eee;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative; /* Penting untuk konteks tumpukan */
+      overflow: hidden; border-radius: 10px; margin-bottom: 20px;
+      height: 220px; background-color: #eee;
+      display: flex; align-items: center; justify-content: center;
+      position: relative;
     }
     .product-img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+      width: 100%; height: 100%; object-fit: cover;
       transition: transform 0.3s ease;
     }
-    .price-card:hover .product-img img {
-      transform: scale(1.05);
-    }
-    /* FIX RIBBON TERTUTUP FOTO */
-    .ribbon {
+    .price-card:hover .product-img img { transform: scale(1.05); }
+    /* UBAH: Ribbon Hijau */
+    .ribbon { 
       z-index: 50 !important; 
+      background-color: #00a99d !important; /* Tambahan force color */
+      color: white;
+      padding: 5px 15px;
+      position: absolute;
+      top: 20px; right: 0;
+      border-radius: 20px 0 0 20px;
+      font-weight: 600;
+      font-size: 0.85rem;
+      box-shadow: -2px 2px 5px rgba(0,0,0,0.1);
     }
+    /* UBAH: Harga Hijau */
+    .price { color: #00a99d !important; }
+    /* UBAH: Badge Hijau */
+    .badge-title { 
+        color: #00a99d; 
+        background: #e0fcf9; 
+        padding: 5px 10px; 
+        border-radius: 5px; 
+        font-weight: 700; 
+        font-size: 0.75rem; 
+        letter-spacing: 1px;
+    }
+    /* UBAH: Button Beli Hijau */
+    .btn-choose { background: #00a99d !important; color: white !important; }
+    .feature-list i { color: #00a99d !important; }
 
-    /* =========================================
-       BUNDLING SECTION ANIMATION
-       ========================================= */
+    /* --- BUNDLING SECTION (TETAP BIRU) --- */
+    /* Sesuai permintaan, bagian ini dibiarkan Biru/Ungu agar beda */
     .bundling-section {
       background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
-      color: white;
-      border-radius: 20px;
-      padding: 50px;
-      margin-top: 60px;
-      box-shadow: 0 15px 40px rgba(13, 110, 253, 0.3);
-      overflow: hidden;
-      position: relative;
+      color: white; border-radius: 20px; padding: 50px;
+      margin-top: 60px; box-shadow: 0 15px 40px rgba(13, 110, 253, 0.3);
+      overflow: hidden; position: relative;
     }
     .bundling-price { font-size: 3rem; font-weight: 800; color: #ffc107; line-height: 1; }
     .old-price { text-decoration: line-through; opacity: 0.7; font-size: 1.5rem; margin-bottom: 5px; }
@@ -295,22 +266,56 @@
     @keyframes float-back { 0% { transform: translateY(0) rotate(-10deg) translate(-20px, 10px); } 100% { transform: translateY(-12px) rotate(-10deg) translate(-20px, 10px); } }
     @keyframes pulse-glow { 0% { transform: scale(0.8); opacity: 0.5; } 50% { transform: scale(1.2); opacity: 0.8; } 100% { transform: scale(0.8); opacity: 0.5; } }
 
-    /* =========================================
-       ABOUT STATS (1 Baris Fix)
-       ========================================= */
+    /* --- ABOUT STATS --- */
     .stats-grid { display: flex !important; flex-direction: row !important; flex-wrap: nowrap !important; justify-content: space-between; gap: 10px; margin-top: 30px; width: 100%; }
     .stat-item { flex: 1 !important; background: #ffffff; padding: 15px 5px; border-radius: 8px; border: 1px solid #e0e0e0; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.03); min-width: 0; }
-    .stat-number { font-size: 1.5rem; font-weight: bold; color: #0ea2bd; margin-bottom: 5px; }
+    /* UBAH: Angka Hijau */
+    .stat-number { font-size: 1.5rem; font-weight: bold; color: #00a99d; margin-bottom: 5px; }
     .stat-label { font-size: 0.8rem; color: #666; white-space: nowrap; }
     @media (max-width: 576px) { .stat-number { font-size: 1.1rem; } .stat-label { font-size: 0.7rem; } }
 
-    /* Testimonials & Others */
+    /* --- JUDUL SAMAR-SAMAR (TRANSPARAN) --- */
+    .section-badge, 
+    .description-title {
+        color: rgba(0, 169, 157, 0.6) !important; /* Hijau Transparan */
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    /* --- TAB SECTION (FITUR) --- */
+    .nav-tabs { border-bottom: 2px solid #e0fcf9 !important; }
+    .nav-link.active { color: #00a99d !important; }
+    .tab-icon { color: #00a99d !important; }
+    .nav-link.active .tab-icon { background: #e0fcf9 !important; }
+    .feature-item i { color: #00a99d !important; }
+    .service-card { border-bottom: 3px solid #00a99d !important; }
+    .service-title a { color: #00a99d !important; }
+    .card-number span { color: #00a99d !important; background: #e0fcf9 !important; }
+
+    /* Testimonials */
     .testimonial-item { background-color: #fff; box-shadow: 0px 0 20px rgba(0, 0, 0, 0.05); padding: 30px; border-radius: 10px; height: 100%; display: flex; flex-direction: column; }
     .testimonial-item .stars { margin-bottom: 15px; } .testimonial-item .stars i { color: #ffc107; font-size: 18px; }
     .testimonial-item p { font-style: italic; margin-bottom: 20px; flex-grow: 1; }
     .testimonial-item .profile { display: flex; align-items: center; margin-top: auto; }
     .testimonial-item .testimonial-img { width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 15px; border: 3px solid #f1f1f1; }
     .swiper-slide { height: auto; padding-bottom: 40px; }
+
+    /* FAQ Accent */
+    .faq-item.faq-active { border-left: 4px solid #00a99d !important; }
+    .faq-item.faq-active h3 { color: #00a99d !important; }
+    .faq-toggle { color: #00a99d !important; }
+
+    /* Contact Accent */
+    .section-category { color: rgba(0, 169, 157, 0.6) !important; font-weight:700; }
+    .info-item i { color: #00a99d !important; }
+    .btn-submit { background: #00a99d !important; color: white !important; border:none; padding:10px 20px; border-radius:5px; }
+    .btn-submit:hover { background: #008f85 !important; }
+
+    /* Scroll Top */
+    #scroll-top { background: #00a99d !important; }
   </style>
 
 </head>
@@ -337,7 +342,7 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="#pricing">Belanja Sekarang</a>
+      <a class="btn-getstarted" href="#pricing" style="background: #00a99d; color: white; border-radius: 50px; padding: 10px 25px; text-decoration: none;">Belanja Sekarang</a>
 
     </div>
   </header>
@@ -381,7 +386,6 @@
             <div class="hero-visual">
               <div class="hero-image-wrapper">
                 
-                
                 <img src="assets/img/illustration/illustration-15.webp" class="img-fluid hero-img-main" alt="Hero Image">
 
                 <div class="floating-card card-1">
@@ -414,6 +418,7 @@
         </div>
       </div>
     </section>
+
     <section id="about" class="about section">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-5">
