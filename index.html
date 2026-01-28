@@ -33,7 +33,7 @@
       font-family: 'Rubik', sans-serif;
     }
 
-    /* --- NAVBAR LOGO STYLING (UPDATED: LYNK.ID STYLE & ABU-ABU SAMAR) --- */
+    /* --- NAVBAR LOGO STYLING --- */
     .sitename {
       display: flex;
       flex-direction: column; /* Susun atas-bawah */
@@ -45,23 +45,22 @@
     .logo-prefix {
       font-size: 0.9rem;
       font-weight: 500;
-      color: #94a3b8; /* Abu-abu sedang */
+      /* UBAH: Hitam/Gelap (Standard) agar terbaca di background terang */
+      color: #334155; 
       letter-spacing: 0.5px;
       margin-bottom: 2px;
     }
 
-    /* Tulisan RKMAULIDA (Besar di bawah, Abu-abu Samar) */
+    /* Tulisan RKMAULIDA (Besar di bawah) */
     .logo-main {
       font-size: 1.8rem;
       font-weight: 800;
       text-transform: uppercase;
       letter-spacing: -0.5px;
-      /* Gradient Abu-abu ke Silver (Efek Samar/Elegan) */
-      background: linear-gradient(135deg, #9ca3af, #d1d5db); 
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      /* Fallback jika browser tidak support gradient text */
-      color: #9ca3af; 
+      /* UBAH: KEMBALI KE HIJAU TOSCA */
+      color: #00a99d;
+      background: none; 
+      -webkit-text-fill-color: #00a99d;
     }
 
     /* --- HERO SECTION --- */
@@ -290,10 +289,10 @@
     .stat-label { font-size: 0.8rem; color: #666; white-space: nowrap; }
     @media (max-width: 576px) { .stat-number { font-size: 1.1rem; } .stat-label { font-size: 0.7rem; } }
 
-    /* --- JUDUL SAMAR-SAMAR (TRANSPARAN) --- */
+    /* --- JUDUL HALAMAN (SECTION TITLE) JADI ABU-ABU --- */
     .section-badge, 
     .description-title {
-        color: rgba(0, 169, 157, 0.6) !important; /* Hijau Transparan */
+        color: #94a3b8 !important; /* UBAH: Abu-abu (seperti permintaan) */
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 1px;
