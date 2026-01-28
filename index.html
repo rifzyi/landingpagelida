@@ -34,40 +34,42 @@
       font-family: 'Rubik', sans-serif;
     }
 
-    /* --- UPDATE LOGO STYLE (STACKED / BERTUMPUK) --- */
+    /* --- UPDATE LOGO STYLE (TEAL GREEN) --- */
     .sitename {
       font-family: 'Poppins', sans-serif !important;
       display: flex;
-      flex-direction: column; /* Menyusun ke bawah */
+      flex-direction: column;
       justify-content: center;
-      align-items: flex-start; /* Rata kiri */
-      line-height: 1; /* Merapatkan jarak baris */
+      align-items: flex-start;
+      line-height: 1;
     }
 
     .logo-prefix {
       font-weight: 500;
-      font-size: 0.85rem; /* Ukuran kecil untuk 'lynk.id' */
-      color: #64748b;     /* Warna abu-abu soft */
+      font-size: 0.85rem;
+      color: #64748b;
       letter-spacing: 0.5px;
-      margin-bottom: 2px; /* Jarak dikit ke teks bawah */
+      margin-bottom: 2px;
       display: block;
     }
 
     .logo-main {
-      font-weight: 800;   /* Font tebal untuk Brand */
-      font-size: 1.8rem;  /* Ukuran besar */
+      font-weight: 800;
+      font-size: 1.8rem;
       letter-spacing: -0.5px;
       text-transform: uppercase;
-      background: linear-gradient(135deg, #0d6efd, #0dcaf0); 
+      /* UBAH WARNA LOGO JADI HIJAU TEAL */
+      background: linear-gradient(135deg, #00a99d, #34d399); 
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       display: block;
     }
 
-    /* --- HERO SECTION (Lynk.id Style) --- */
+    /* --- HERO SECTION (Updated Background Tint) --- */
     .hero {
       padding: 140px 0 80px 0;
-      background: #f8faff;
+      /* Ubah background jadi tint hijau sangat muda */
+      background: #f0fdfa; 
       position: relative;
       overflow: hidden;
     }
@@ -76,7 +78,8 @@
       position: absolute;
       top: -10%; right: -5%;
       width: 500px; height: 500px;
-      background: radial-gradient(circle, rgba(37, 99, 235, 0.1) 0%, rgba(255,255,255,0) 70%);
+      /* Ubah glow effect jadi hijau */
+      background: radial-gradient(circle, rgba(0, 169, 157, 0.1) 0%, rgba(255,255,255,0) 70%);
       border-radius: 50%;
       z-index: 0;
       pointer-events: none;
@@ -99,27 +102,38 @@
       line-height: 1.6;
     }
 
-    /* Buttons */
+    /* --- BUTTONS (CHANGED TO GREEN) --- */
     .btn-primary-modern {
-      background: #0d6efd; color: white; padding: 12px 35px;
+      /* Hijau Teal */
+      background: #00a99d; 
+      color: white; padding: 12px 35px;
       border-radius: 50px; font-weight: 600;
-      box-shadow: 0 10px 20px rgba(13, 110, 253, 0.2);
+      /* Shadow Hijau */
+      box-shadow: 0 10px 20px rgba(0, 169, 157, 0.2);
       transition: all 0.3s ease; text-decoration: none;
       display: inline-flex; align-items: center; border: none;
     }
     .btn-primary-modern:hover {
-      background: #0b5ed7; transform: translateY(-3px);
-      box-shadow: 0 15px 25px rgba(13, 110, 253, 0.3); color: white;
+      /* Hijau lebih gelap saat hover */
+      background: #008f85; 
+      transform: translateY(-3px);
+      box-shadow: 0 15px 25px rgba(0, 169, 157, 0.3); color: white;
     }
 
     .btn-secondary-modern {
-      background: white; color: #0d6efd; padding: 12px 35px;
+      background: white; 
+      /* Teks Hijau */
+      color: #00a99d; 
+      padding: 12px 35px;
       border-radius: 50px; font-weight: 600; border: 1px solid #e2e8f0;
       margin-left: 10px; text-decoration: none; transition: all 0.3s ease;
       display: inline-flex; align-items: center;
     }
     .btn-secondary-modern:hover {
-      background: #f1f5f9; color: #0b5ed7; border-color: #cbd5e1;
+      background: #f0fdfa; 
+      /* Teks Hijau Gelap */
+      color: #008f85; 
+      border-color: #cbd5e1;
     }
 
     /* Hero Visual */
@@ -152,25 +166,28 @@
     .card-info h5 { font-size: 0.9rem; font-weight: 700; margin: 0; color: #334155; }
     .card-info p { font-size: 0.75rem; margin: 0; color: #64748b; }
 
-    /* --- COLOR HARMONY (FLOATING CARDS) --- */
+    /* --- COLOR HARMONY UPDATED TO GREEN --- */
     .card-1 { top: 25%; left: -20px; animation: float-card 5s ease-in-out infinite 0s; }
     .icon-1 { 
         background: white; 
-        color: #0d6efd; 
+        /* Icon Hijau */
+        color: #00a99d; 
         border: 1px solid #e2e8f0; 
     } 
 
     .card-2 { bottom: 15%; right: -10px; animation: float-card 5s ease-in-out infinite 1.5s; }
     .icon-2 { 
-        background: linear-gradient(135deg, #0d6efd, #0dcaf0); 
+        /* Gradient Hijau */
+        background: linear-gradient(135deg, #00a99d, #34d399); 
         color: white; 
-        box-shadow: 0 4px 12px rgba(13, 110, 253, 0.2);
+        box-shadow: 0 4px 12px rgba(0, 169, 157, 0.2);
     } 
 
     .card-3 { top: 10%; right: 30px; animation: float-card 6s ease-in-out infinite 0.5s; padding: 8px 12px; }
     .icon-3 { 
-        background: #e0f2fe; 
-        color: #0ea5e9; 
+        /* Background Hijau Sangat Muda */
+        background: #ccfbf1; 
+        color: #00a99d; 
     } 
 
     /* Hero Stats */
@@ -179,7 +196,9 @@
        border-top: 1px solid #e2e8f0; padding-top: 30px;
     }
     .stat-number-hero {
-      font-size: 2rem; font-weight: 800; color: #0ea2bd;
+      font-size: 2rem; font-weight: 800; 
+      /* Angka Hijau */
+      color: #00a99d;
       display: block; line-height: 1; margin-bottom: 5px;
     }
     .stat-label-hero { font-size: 0.9rem; color: #64748b; font-weight: 500; }
@@ -211,10 +230,25 @@
       transition: transform 0.3s ease;
     }
     .price-card:hover .product-img img { transform: scale(1.05); }
-    .ribbon { z-index: 50 !important; }
+    .ribbon { 
+        z-index: 50 !important; 
+        /* Update Ribbon to Green */
+        background-color: #00a99d;
+        color: white;
+        padding: 5px 15px;
+        position: absolute;
+        top: 20px; right: 0;
+        border-radius: 20px 0 0 20px;
+        font-weight: 600;
+        font-size: 0.85rem;
+        box-shadow: -2px 2px 5px rgba(0,0,0,0.1);
+    }
 
-    /* --- BUNDLING SECTION --- */
+    /* =========================================
+       BUNDLING SECTION (TETAP BIRU - EXCEPTION)
+       ========================================= */
     .bundling-section {
+      /* TETAP BIRU SESUAI PERMINTAAN */
       background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
       color: white; border-radius: 20px; padding: 50px;
       margin-top: 60px; box-shadow: 0 15px 40px rgba(13, 110, 253, 0.3);
@@ -247,7 +281,7 @@
       box-shadow: 0 15px 35px rgba(0,0,0,0.3); transition: all 0.5s ease;
     }
 
-    /* --- COLOR HARMONY (BUNDLING CARDS) --- */
+    /* Keep Bundling Cards Blue too */
     .card-anim-back {
       background: linear-gradient(135deg, #0a58ca, #06357a); 
       border: 1px solid rgba(255,255,255,0.1);
@@ -266,7 +300,7 @@
       border: 1px solid rgba(255,255,255,1);
       z-index: 3; display: flex; flex-direction: column;
       align-items: center; justify-content: center; text-align: center;
-      color: #0d6efd; 
+      color: #0d6efd; /* Text tetap biru di dalam kartu promo */
       transform: rotate(-3deg);
       box-shadow: 0 20px 50px rgba(0,0,0,0.15);
       animation: float-front 3s infinite ease-in-out alternate;
@@ -296,11 +330,16 @@
         .bundling-section { padding: 30px 20px; }
         .bundling-price { font-size: 2.5rem; }
     }
+    /* ========================================= */
 
     /* --- ABOUT STATS --- */
     .stats-grid { display: flex !important; flex-wrap: wrap; justify-content: space-between; gap: 10px; margin-top: 30px; }
     .stat-item { flex: 1; min-width: 100px; background: #fff; padding: 15px 5px; border-radius: 8px; border: 1px solid #e0e0e0; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.03); }
-    .stat-number { font-size: 1.5rem; font-weight: bold; color: #0ea2bd; }
+    .stat-number { 
+        font-size: 1.5rem; font-weight: bold; 
+        /* Angka Hijau */
+        color: #00a99d; 
+    }
     .stat-label { font-size: 0.8rem; color: #666; }
 
     /* --- TESTIMONIALS --- */
@@ -336,7 +375,7 @@
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-      <a class="btn-getstarted" href="https://lynk.id/rkmaulida">Belanja Sekarang</a>
+      <a class="btn-getstarted" href="https://lynk.id/rkmaulida" style="background: #00a99d; color: white; border-radius: 50px; padding: 10px 25px; text-decoration: none;">Belanja Sekarang</a>
     </div>
   </header>
 
@@ -413,7 +452,7 @@
           <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
             <div class="content-wrapper">
               <div class="section-header">
-                <span class="section-badge">TENTANG RKMAULIDA</span>
+                <span class="section-badge" style="color: #00a99d; font-weight:700;">TENTANG RKMAULIDA</span>
                 <h2>Solusi Belajar Praktis & Terjangkau</h2>
               </div>
               <p class="lead-text">Kami menyediakan materi pembelajaran digital yang disusun oleh praktisi berpengalaman untuk membantu Anda meningkatkan skill di era digital.</p>
@@ -445,28 +484,28 @@
 
     <section id="features" class="features section">
       <div class="container section-title" data-aos="fade-up">
-        <span class="description-title">Fitur</span>
+        <span class="description-title" style="color:#00a99d">Fitur</span>
         <h2>Mengapa Belanja Di Sini?</h2>
         <p>Keunggulan layanan kami dibanding toko produk digital lainnya</p>
       </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="tabs-wrapper">
-          <ul class="nav nav-tabs" data-aos="fade-up" data-aos-delay="100">
+          <ul class="nav nav-tabs" data-aos="fade-up" data-aos-delay="100" style="border-bottom: 2px solid #e0fcf9;">
             <li class="nav-item">
-              <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
-                <div class="tab-icon"><i class="bi bi-lightning-charge"></i></div>
+              <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1" style="color:#00a99d;">
+                <div class="tab-icon" style="background:#e0fcf9; color:#00a99d;"><i class="bi bi-lightning-charge"></i></div>
                 <div class="tab-content"><h5>Akses Kilat</h5><span>Auto-Kirim</span></div>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2" style="color:#444;">
                 <div class="tab-icon"><i class="bi bi-shield-check"></i></div>
                 <div class="tab-content"><h5>Aman</h5><span>Transaksi Resmi</span></div>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3" style="color:#444;">
                 <div class="tab-icon"><i class="bi bi-phone"></i></div>
                 <div class="tab-content"><h5>Fleksibel</h5><span>Multi-Device</span></div>
               </a>
@@ -481,8 +520,8 @@
                     <h3>Pengiriman Otomatis Detik Itu Juga</h3>
                     <p>Sistem kami bekerja 24 jam non-stop. Setelah Anda transfer dan konfirmasi, link download produk langsung masuk ke email Anda.</p>
                     <div class="feature-grid">
-                      <div class="feature-item"><i class="bi bi-check-circle-fill"></i> Tidak perlu chat admin manual</div>
-                      <div class="feature-item"><i class="bi bi-check-circle-fill"></i> Link aktif selamanya</div>
+                      <div class="feature-item"><i class="bi bi-check-circle-fill" style="color:#00a99d;"></i> Tidak perlu chat admin manual</div>
+                      <div class="feature-item"><i class="bi bi-check-circle-fill" style="color:#00a99d;"></i> Link aktif selamanya</div>
                     </div>
                   </div>
                 </div>
@@ -491,44 +530,14 @@
                 </div>
               </div>
             </div>
-            <div class="tab-pane fade" id="features-tab-2">
-              <div class="row align-items-center">
-                <div class="col-lg-5">
-                  <div class="content-wrapper">
-                    <h3>Transaksi Aman & Terpercaya</h3>
-                    <p>Kami menggunakan payment gateway resmi yang mendukung berbagai metode pembayaran populer di Indonesia.</p>
-                    <div class="feature-grid">
-                      <div class="feature-item"><i class="bi bi-check-circle-fill"></i> Support QRIS, E-Wallet, Transfer Bank</div>
-                      <div class="feature-item"><i class="bi bi-check-circle-fill"></i> Data privasi terjaga</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-7">
-                   <div class="visual-content"><img src="assets/img/features/features-2.webp" class="img-fluid" alt=""></div>
-                </div>
-              </div>
             </div>
-            <div class="tab-pane fade" id="features-tab-3">
-              <div class="row align-items-center">
-                <div class="col-lg-5">
-                  <div class="content-wrapper">
-                    <h3>Akses Dari Mana Saja</h3>
-                    <p>Materi E-book PDF dan Video Course kami responsif. Nyaman dibaca di HP saat di perjalanan, atau di Laptop saat praktek.</p>
-                  </div>
-                </div>
-                <div class="col-lg-7">
-                   <div class="visual-content"><img src="assets/img/features/features-3.webp" class="img-fluid" alt=""></div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
 
     <section id="services" class="services section">
       <div class="container section-title" data-aos="fade-up">
-        <span class="description-title">Kategori</span>
+        <span class="description-title" style="color:#00a99d">Kategori</span>
         <h2>Kategori Produk</h2>
         <p>Pilih jenis produk digital yang sesuai dengan kebutuhan Anda</p>
       </div>
@@ -536,67 +545,31 @@
         <div class="services-grid">
           <div class="row g-4">
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-              <div class="service-card">
-                <div class="card-number"><span>01</span></div>
+              <div class="service-card" style="border-bottom: 3px solid #00a99d;">
+                <div class="card-number"><span style="color:#00a99d; background:#e0fcf9;">01</span></div>
                 <div class="card-content">
-                  <h5 class="service-title"><a href="#">E-Book Bisnis</a></h5>
+                  <h5 class="service-title"><a href="#" style="color:#00a99d;">E-Book Bisnis</a></h5>
                   <p class="service-description">Kumpulan panduan praktis membangun bisnis online, digital marketing, dan copywriting.</p>
                 </div>
               </div>
             </div>
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-              <div class="service-card">
-                <div class="card-number"><span>02</span></div>
+              <div class="service-card" style="border-bottom: 3px solid #00a99d;">
+                <div class="card-number"><span style="color:#00a99d; background:#e0fcf9;">02</span></div>
                 <div class="card-content">
-                  <h5 class="service-title"><a href="#">Video Course</a></h5>
+                  <h5 class="service-title"><a href="#" style="color:#00a99d;">Video Course</a></h5>
                   <p class="service-description">Tutorial video HD langkah demi langkah menguasai skill teknis seperti desain dan coding.</p>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-              <div class="service-card">
-                <div class="card-number"><span>03</span></div>
-                <div class="card-content">
-                  <h5 class="service-title"><a href="#">Preset Lightroom</a></h5>
-                  <p class="service-description">Filter foto siap pakai untuk mempercantik feed media sosial Anda secara instan.</p>
-                </div>
-              </div>
             </div>
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-              <div class="service-card">
-                <div class="card-number"><span>04</span></div>
-                <div class="card-content">
-                  <h5 class="service-title"><a href="#">Template Notion</a></h5>
-                  <p class="service-description">Sistem produktivitas siap pakai untuk mengatur tugas, keuangan, dan jadwal.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-              <div class="service-card">
-                <div class="card-number"><span>05</span></div>
-                <div class="card-content">
-                  <h5 class="service-title"><a href="#">Aset Grafis</a></h5>
-                  <p class="service-description">Font, Icon, dan Ilustrasi premium untuk kebutuhan proyek desain Anda.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-              <div class="service-card">
-                <div class="card-number"><span>06</span></div>
-                <div class="card-content">
-                  <h5 class="service-title"><a href="#">Jasa Konsultasi</a></h5>
-                  <p class="service-description">Sesi mentoring privat 1-on-1 untuk bedah kasus bisnis atau karir Anda.</p>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
 
     <section id="pricing" class="pricing section">
       <div class="container section-title" data-aos="fade-up">
-        <span class="description-title">Katalog</span>
+        <span class="description-title" style="color:#00a99d">Katalog</span>
         <h2>Produk Unggulan</h2>
         <p>Produk terlaris yang paling banyak dicari minggu ini</p>
       </div>
@@ -610,20 +583,20 @@
                 <img src="assets/img/blog/blog-1.jpg" alt="Ebook Bisnis">
               </div>
               <div class="card-head">
-                <span class="badge-title">E-BOOK</span>
+                <span class="badge-title" style="color:#00a99d; background:#e0fcf9;">E-BOOK</span>
                 <h3 class="title">Panduan Karir Digital</h3>
                 <p class="subtitle">Roadmap lengkap menjadi freelancer sukses.</p>
                 <div class="price-wrap">
-                  <span class="price"><sup>Rp</sup>49.000</span>
+                  <span class="price" style="color:#00a99d;"><sup>Rp</sup>49.000</span>
                 </div>
               </div>
               <ul class="feature-list list-unstyled mb-4">
-                <li><i class="bi bi-check-circle"></i> 150 Halaman PDF</li>
-                <li><i class="bi bi-check-circle"></i> Bonus Template CV</li>
-                <li><i class="bi bi-check-circle"></i> Akses Selamanya</li>
+                <li><i class="bi bi-check-circle" style="color:#00a99d;"></i> 150 Halaman PDF</li>
+                <li><i class="bi bi-check-circle" style="color:#00a99d;"></i> Bonus Template CV</li>
+                <li><i class="bi bi-check-circle" style="color:#00a99d;"></i> Akses Selamanya</li>
               </ul>
               <div class="cta">
-                <a href="#" class="btn btn-choose w-100">Beli Sekarang</a>
+                <a href="#" class="btn btn-choose w-100" style="background:#00a99d; color:white;">Beli Sekarang</a>
               </div>
             </article>
           </div>
@@ -635,20 +608,20 @@
                  <img src="assets/img/blog/blog-2.png" alt="Kelas Canva">
               </div>
               <div class="card-head">
-                <span class="badge-title">COURSE</span>
+                <span class="badge-title" style="color:#00a99d; background:#e0fcf9;">COURSE</span>
                 <h3 class="title">Jago Desain Canva</h3>
                 <p class="subtitle">Mahir desain grafis modal HP dan Canva gratisan.</p>
                 <div class="price-wrap">
-                  <span class="price"><sup>Rp</sup>99.000</span>
+                  <span class="price" style="color:#00a99d;"><sup>Rp</sup>99.000</span>
                 </div>
               </div>
               <ul class="feature-list list-unstyled mb-4">
-                <li><i class="bi bi-check-circle"></i> 20 Video Materi HD</li>
-                <li><i class="bi bi-check-circle"></i> Grup Support Telegram</li>
-                <li><i class="bi bi-check-circle"></i> Sertifikat Digital</li>
+                <li><i class="bi bi-check-circle" style="color:#00a99d;"></i> 20 Video Materi HD</li>
+                <li><i class="bi bi-check-circle" style="color:#00a99d;"></i> Grup Support Telegram</li>
+                <li><i class="bi bi-check-circle" style="color:#00a99d;"></i> Sertifikat Digital</li>
               </ul>
               <div class="cta">
-                <a href="#" class="btn btn-choose w-100">Daftar Kelas</a>
+                <a href="#" class="btn btn-choose w-100" style="background:#00a99d; color:white;">Daftar Kelas</a>
               </div>
             </article>
           </div>
@@ -659,20 +632,20 @@
                  <img src="assets/img/blog/blog-3.jpg" alt="Preset Lightroom">
               </div>
               <div class="card-head">
-                <span class="badge-title">PRESET</span>
+                <span class="badge-title" style="color:#00a99d; background:#e0fcf9;">PRESET</span>
                 <h3 class="title">Selebgram Preset Pack</h3>
                 <p class="subtitle">50+ Filter estetik ala influencer papan atas.</p>
                 <div class="price-wrap">
-                  <span class="price"><sup>Rp</sup>29.000</span>
+                  <span class="price" style="color:#00a99d;"><sup>Rp</sup>29.000</span>
                 </div>
               </div>
               <ul class="feature-list list-unstyled mb-4">
-                <li><i class="bi bi-check-circle"></i> Format DNG & XMP</li>
-                <li><i class="bi bi-check-circle"></i> Tutorial Penggunaan</li>
-                <li><i class="bi bi-check-circle"></i> Support iOS/Android</li>
+                <li><i class="bi bi-check-circle" style="color:#00a99d;"></i> Format DNG & XMP</li>
+                <li><i class="bi bi-check-circle" style="color:#00a99d;"></i> Tutorial Penggunaan</li>
+                <li><i class="bi bi-check-circle" style="color:#00a99d;"></i> Support iOS/Android</li>
               </ul>
               <div class="cta">
-                <a href="#" class="btn btn-choose w-100">Download</a>
+                <a href="#" class="btn btn-choose w-100" style="background:#00a99d; color:white;">Download</a>
               </div>
             </article>
           </div>
@@ -736,7 +709,7 @@
 
     <section id="testimonials" class="testimonials section light-background">
       <div class="container section-title" data-aos="fade-up">
-        <span class="description-title">Testimoni</span>
+        <span class="description-title" style="color:#00a99d">Testimoni</span>
         <h2>Apa Kata Mereka?</h2>
         <p>Cerita asli dari pelanggan yang sudah merasakan manfaat produk kami</p>
       </div>
@@ -779,23 +752,13 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-slide">
+             <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
                 <p>"Kelas Canvanya mudah dipahami. Saya ibu rumah tangga gaptek aja bisa ngikutin. Sekarang bisa bantu suami bikin desain promosi."</p>
                 <div class="profile">
                   <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
                   <div><h3>Culiss</h3><h4>Konten Kreator</h4></div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
-                <p>"Ambil paket bundling pas promo, untung banget! Materi lengkap, support adminnya juga ramah dan fast respon."</p>
-                <div class="profile">
-                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                  <div><h3>Hudaaaaaaaaa</h3><h4>Calon BOS</h4></div>
                 </div>
               </div>
             </div>
@@ -807,7 +770,7 @@
 
     <section id="faq" class="faq section">
       <div class="container section-title" data-aos="fade-up">
-        <span class="description-title">Bantuan</span>
+        <span class="description-title" style="color:#00a99d">Bantuan</span>
         <h2>Pertanyaan Umum</h2>
         <p>Hal-hal yang sering ditanyakan seputar pembelian dan produk</p>
       </div>
@@ -815,20 +778,20 @@
         <div class="row justify-content-center">
           <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
             <div class="faq-container">
-              <div class="faq-item faq-active">
-                <h3>Apakah produk dikirim fisik ke rumah?</h3>
+              <div class="faq-item faq-active" style="border-left: 4px solid #00a99d;">
+                <h3 style="color:#00a99d;">Apakah produk dikirim fisik ke rumah?</h3>
                 <div class="faq-content"><p>Tidak. Semua produk di RKMAULIDA adalah produk digital (Softfile). Anda akan mendapatkan link download melalui email/WhatsApp setelah pembayaran.</p></div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
+                <i class="faq-toggle bi bi-chevron-right" style="color:#00a99d;"></i>
               </div>
               <div class="faq-item">
                 <h3>Bagaimana jika link download error?</h3>
                 <div class="faq-content"><p>Jangan khawatir, silakan hubungi admin melalui WhatsApp. Kami akan mengirimkan link alternatif secepatnya.</p></div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
+                <i class="faq-toggle bi bi-chevron-right" style="color:#00a99d;"></i>
               </div>
               <div class="faq-item">
                 <h3>Metode pembayaran apa saja?</h3>
                 <div class="faq-content"><p>Kami menerima Transfer Bank (BCA, Mandiri, BRI), E-Wallet (GoPay, Dana, OVO, ShopeePay), dan QRIS.</p></div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
+                <i class="faq-toggle bi bi-chevron-right" style="color:#00a99d;"></i>
               </div>
             </div>
           </div>
@@ -838,7 +801,7 @@
 
     <section id="contact" class="contact section light-background">
       <div class="container section-title" data-aos="fade-up">
-        <span class="description-title">Kontak</span>
+        <span class="description-title" style="color:#00a99d">Kontak</span>
         <h2>Hubungi Kami</h2>
         <p>Punya pertanyaan lain? Tim kami siap membantu Anda.</p>
       </div>
@@ -846,13 +809,13 @@
         <div class="row g-5">
           <div class="col-lg-6">
             <div class="content" data-aos="fade-up" data-aos-delay="200">
-              <div class="section-category mb-3">LAYANAN PELANGGAN</div>
+              <div class="section-category mb-3" style="color:#00a99d; font-weight:700;">LAYANAN PELANGGAN</div>
               <h2 class="display-5 mb-4">Kami Siap Membantu 24/7</h2>
               <p class="lead mb-4">Jangan ragu untuk menghubungi kami jika ada kendala saat checkout atau download file.</p>
               <div class="contact-info mt-5">
-                <div class="info-item d-flex mb-3"><i class="bi bi-envelope-at me-3"></i><span>admin@rkmaulida.com</span></div>
-                <div class="info-item d-flex mb-3"><i class="bi bi-whatsapp me-3"></i><span>+62 812 3456 7890</span></div>
-                <div class="info-item d-flex mb-4"><i class="bi bi-geo-alt me-3"></i><span>Jakarta, Indonesia</span></div>
+                <div class="info-item d-flex mb-3"><i class="bi bi-envelope-at me-3" style="color:#00a99d;"></i><span>admin@rkmaulida.com</span></div>
+                <div class="info-item d-flex mb-3"><i class="bi bi-whatsapp me-3" style="color:#00a99d;"></i><span>+62 812 3456 7890</span></div>
+                <div class="info-item d-flex mb-4"><i class="bi bi-geo-alt me-3" style="color:#00a99d;"></i><span>Jakarta, Indonesia</span></div>
               </div>
             </div>
           </div>
@@ -865,7 +828,7 @@
                     <div class="col-12"><input type="email" name="email" class="form-control" placeholder="Email Anda" required></div>
                     <div class="col-12"><input type="text" name="subject" class="form-control" placeholder="Subjek / Kendala" required></div>
                     <div class="col-12"><textarea class="form-control" name="message" rows="6" placeholder="Tulis pesan Anda di sini..." required></textarea></div>
-                    <div class="col-12 text-center"><button type="submit" class="btn btn-submit w-100">Kirim Pesan</button></div>
+                    <div class="col-12 text-center"><button type="submit" class="btn btn-submit w-100" style="background:#00a99d; color:white;">Kirim Pesan</button></div>
                   </div>
                 </form>
               </div>
@@ -884,7 +847,7 @@
           <a href="index.html" class="logo d-flex align-items-center">
              <span class="sitename">
                 <span class="logo-prefix">lynk.id</span>
-                <span class="logo-main">RKMAULIDA</span>
+                <span class="logo-main" style="background: linear-gradient(135deg, #00a99d, #34d399); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">RKMAULIDA</span>
              </span>
           </a>
           <p>Platform edukasi dan aset digital terpercaya. Kami membantu kreator dan pebisnis online bertumbuh lebih cepat.</p>
@@ -921,11 +884,11 @@
       </div>
     </div>
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">RKMAULIDA</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename" style="color:#00a99d;">RKMAULIDA</strong> <span>All Rights Reserved</span></p>
     </div>
   </footer>
 
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" style="background:#00a99d;"><i class="bi bi-arrow-up-short"></i></a>
 
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
